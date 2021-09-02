@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\x1dxn\\source\\repos\\MusicStore\\MusicStore\\MusicStore.csproj": {}
+    "C:\\Users\\x1dxn\\Documents\\Repositories\\MusicStore\\MusicStore\\MusicStore\\MusicStore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\x1dxn\\source\\repos\\MusicStore\\MusicStore\\MusicStore.csproj": {
+    "C:\\Users\\x1dxn\\Documents\\Repositories\\MusicStore\\MusicStore\\MusicStore\\MusicStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\x1dxn\\source\\repos\\MusicStore\\MusicStore\\MusicStore.csproj",
+        "projectUniqueName": "C:\\Users\\x1dxn\\Documents\\Repositories\\MusicStore\\MusicStore\\MusicStore\\MusicStore.csproj",
         "projectName": "MusicStore",
-        "projectPath": "C:\\Users\\x1dxn\\source\\repos\\MusicStore\\MusicStore\\MusicStore.csproj",
+        "projectPath": "C:\\Users\\x1dxn\\Documents\\Repositories\\MusicStore\\MusicStore\\MusicStore\\MusicStore.csproj",
         "packagesPath": "C:\\Users\\x1dxn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\x1dxn\\source\\repos\\MusicStore\\MusicStore\\obj\\",
+        "outputPath": "C:\\Users\\x1dxn\\Documents\\Repositories\\MusicStore\\MusicStore\\MusicStore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\x1dxn\\AppData\\Roaming\\NuGet\\NuGet.Config",
