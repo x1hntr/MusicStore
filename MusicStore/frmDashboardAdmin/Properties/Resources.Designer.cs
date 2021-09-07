@@ -63,6 +63,16 @@ namespace frmDashboardAdmin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap boton_de_play__1_ {
+            get {
+                object obj = ResourceManager.GetObject("boton_de_play__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cdicon {
             get {
                 object obj = ResourceManager.GetObject("cdicon", resourceCulture);
