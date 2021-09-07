@@ -29,9 +29,7 @@ namespace frnPreview
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btnCerrar
@@ -57,7 +55,6 @@ namespace frnPreview
             this.Controls.Add(this.btnCerrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
-            this.Opacity = 0.9D;
             this.Text = "Form1";
             this.ResumeLayout(false);
 
@@ -65,7 +62,6 @@ namespace frnPreview
 
         #endregion
         private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.Timer timer1;
     }
 }
 

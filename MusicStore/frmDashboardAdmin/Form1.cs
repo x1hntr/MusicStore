@@ -21,5 +21,11 @@ namespace frmDashboardAdmin
         {
             this.Close();
         }
+
+        private void horaFecha_Tick(object sender, EventArgs e)
+        {
+            lblHora.Text = DateTime.Now.ToString("h:mm:ss");
+            lblFecha.Text = DateTime.Now.ToLongDateString();
+        }
     }
 }

@@ -7,3 +7,4 @@ C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frnPreview\obj\Debug
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frnPreview\obj\Debug\frnPreview.csproj.CoreCompileInputs.cache
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frnPreview\obj\Debug\frnPreview.exe
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frnPreview\obj\Debug\frnPreview.pdb
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frnPreview\obj\Debug\frnPreview.csprojAssemblyReference.cache
