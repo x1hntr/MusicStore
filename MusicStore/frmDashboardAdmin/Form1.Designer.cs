@@ -40,7 +40,6 @@ namespace frmDashboardAdmin
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnVentas = new System.Windows.Forms.Button();
             this.btnAlbumes = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
             this.lblHora = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.horaFecha = new System.Windows.Forms.Timer(this.components);
@@ -59,9 +58,10 @@ namespace frmDashboardAdmin
             this.panel1.Controls.Add(this.btnClientes);
             this.panel1.Controls.Add(this.btnVentas);
             this.panel1.Controls.Add(this.btnAlbumes);
-            this.panel1.Location = new System.Drawing.Point(-1, -1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(238, 526);
+            this.panel1.Size = new System.Drawing.Size(238, 561);
             this.panel1.TabIndex = 0;
             // 
             // btnResumen
@@ -103,6 +103,7 @@ namespace frmDashboardAdmin
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(31)))));
+            this.btnSalir.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(31)))));
             this.btnSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
@@ -111,9 +112,9 @@ namespace frmDashboardAdmin
             this.btnSalir.ForeColor = System.Drawing.Color.White;
             this.btnSalir.Image = global::frmDashboardAdmin.Properties.Resources.salir;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(51, 476);
+            this.btnSalir.Location = new System.Drawing.Point(0, 523);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(184, 38);
+            this.btnSalir.Size = new System.Drawing.Size(238, 38);
             this.btnSalir.TabIndex = 4;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -193,24 +194,6 @@ namespace frmDashboardAdmin
             this.btnAlbumes.Text = "ALBUMES";
             this.btnAlbumes.UseVisualStyleBackColor = false;
             // 
-            // btnCerrar
-            // 
-            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
-            this.btnCerrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
-            this.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar.ForeColor = System.Drawing.Color.White;
-            this.btnCerrar.Image = global::frmDashboardAdmin.Properties.Resources.Close_Icon;
-            this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(916, -1);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(31, 34);
-            this.btnCerrar.TabIndex = 6;
-            this.btnCerrar.UseVisualStyleBackColor = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
             // lblHora
             // 
             this.lblHora.AutoSize = true;
@@ -240,17 +223,17 @@ namespace frmDashboardAdmin
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
-            this.ClientSize = new System.Drawing.Size(950, 525);
+            this.ClientSize = new System.Drawing.Size(934, 561);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblHora);
-            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MinimumSize = new System.Drawing.Size(950, 600);
             this.Name = "Form1";
             this.Opacity = 0.99D;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -270,7 +253,6 @@ namespace frmDashboardAdmin
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnInfo;
-        private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnResumen;
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Label lblFecha;
