@@ -32,18 +32,19 @@ namespace MusicStore
             this.btnAcceder = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.pbCerrar = new System.Windows.Forms.PictureBox();
-            this.pbMinimizar = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).BeginInit();
+            this.pbMinimizar = new System.Windows.Forms.PictureBox();
+            this.pbCerrar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAcceder
             // 
             this.btnAcceder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.btnAcceder.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.btnAcceder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
             this.btnAcceder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAcceder.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAcceder.ForeColor = System.Drawing.Color.White;
@@ -78,27 +79,6 @@ namespace MusicStore
             this.textBox2.TabIndex = 2;
             this.textBox2.Text = "PASSWORD";
             // 
-            // pbCerrar
-            // 
-            this.pbCerrar.Image = global::MusicStore.Properties.Resources.Close_Icon;
-            this.pbCerrar.Location = new System.Drawing.Point(766, 12);
-            this.pbCerrar.Name = "pbCerrar";
-            this.pbCerrar.Size = new System.Drawing.Size(16, 16);
-            this.pbCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbCerrar.TabIndex = 4;
-            this.pbCerrar.TabStop = false;
-            this.pbCerrar.Click += new System.EventHandler(this.pbCerrar_Click);
-            // 
-            // pbMinimizar
-            // 
-            this.pbMinimizar.Image = global::MusicStore.Properties.Resources.Minimize_Icon;
-            this.pbMinimizar.Location = new System.Drawing.Point(742, 12);
-            this.pbMinimizar.Name = "pbMinimizar";
-            this.pbMinimizar.Size = new System.Drawing.Size(16, 16);
-            this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbMinimizar.TabIndex = 5;
-            this.pbMinimizar.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -118,6 +98,28 @@ namespace MusicStore
             this.panel1.Size = new System.Drawing.Size(284, 351);
             this.panel1.TabIndex = 11;
             // 
+            // pbMinimizar
+            // 
+            this.pbMinimizar.Image = global::MusicStore.Properties.Resources.Minimize_Icon;
+            this.pbMinimizar.Location = new System.Drawing.Point(742, 12);
+            this.pbMinimizar.Name = "pbMinimizar";
+            this.pbMinimizar.Size = new System.Drawing.Size(16, 16);
+            this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbMinimizar.TabIndex = 5;
+            this.pbMinimizar.TabStop = false;
+            this.pbMinimizar.Click += new System.EventHandler(this.pbMinimizar_Click);
+            // 
+            // pbCerrar
+            // 
+            this.pbCerrar.Image = global::MusicStore.Properties.Resources.Close_Icon;
+            this.pbCerrar.Location = new System.Drawing.Point(766, 12);
+            this.pbCerrar.Name = "pbCerrar";
+            this.pbCerrar.Size = new System.Drawing.Size(16, 16);
+            this.pbCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbCerrar.TabIndex = 4;
+            this.pbCerrar.TabStop = false;
+            this.pbCerrar.Click += new System.EventHandler(this.pbCerrar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -136,8 +138,8 @@ namespace MusicStore
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,10 +150,10 @@ namespace MusicStore
         private System.Windows.Forms.Button btnAcceder;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.PictureBox pbCerrar;
-        private System.Windows.Forms.PictureBox pbMinimizar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pbMinimizar;
+        private System.Windows.Forms.PictureBox pbCerrar;
     }
 }
 

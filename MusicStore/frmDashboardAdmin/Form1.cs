@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MusicStore
+namespace frmDashboardAdmin
 {
     public partial class Form1 : Form
     {
@@ -17,21 +17,9 @@ namespace MusicStore
             InitializeComponent();
         }
 
-      
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pbCerrar_Click(object sender, EventArgs e)
+        private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void pbMinimizar_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
