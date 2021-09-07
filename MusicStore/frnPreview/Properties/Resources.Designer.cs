@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace frmDashboardAdmin.Properties {
+namespace frnPreview.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace frmDashboardAdmin.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("frmDashboardAdmin.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("frnPreview.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,26 +63,6 @@ namespace frmDashboardAdmin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cdicon {
-            get {
-                object obj = ResourceManager.GetObject("cdicon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap clientes {
-            get {
-                object obj = ResourceManager.GetObject("clientes", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Close_Icon {
             get {
                 object obj = ResourceManager.GetObject("Close_Icon", resourceCulture);
@@ -93,29 +73,9 @@ namespace frmDashboardAdmin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap informacion {
+        internal static System.Drawing.Bitmap pausa {
             get {
-                object obj = ResourceManager.GetObject("informacion", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] quema_de_cd {
-            get {
-                object obj = ResourceManager.GetObject("quema_de_cd", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap resumen {
-            get {
-                object obj = ResourceManager.GetObject("resumen", resourceCulture);
+                object obj = ResourceManager.GetObject("pausa", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,29 +83,9 @@ namespace frmDashboardAdmin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap salir {
+        internal static System.Drawing.Bitmap play {
             get {
-                object obj = ResourceManager.GetObject("salir", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap usuario {
-            get {
-                object obj = ResourceManager.GetObject("usuario", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ventas {
-            get {
-                object obj = ResourceManager.GetObject("ventas", resourceCulture);
+                object obj = ResourceManager.GetObject("play", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

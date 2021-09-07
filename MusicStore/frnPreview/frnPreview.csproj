@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5A2F36F0-82AA-420A-9AA4-EEC706E44F96}</ProjectGuid>
+    <ProjectGuid>{C2FD5E84-B974-4104-A98A-9CB66474D42E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>frmDashboardAdmin</RootNamespace>
-    <AssemblyName>frmDashboardAdmin</AssemblyName>
+    <RootNamespace>frnPreview</RootNamespace>
+    <AssemblyName>frnPreview</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -81,37 +81,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Diseño sin título %2830%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\quema-de-cd.svg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\quema-de-cd.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\quema-de-cd %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\carrito-de-compras %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\grupo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\usuario.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cerrar-sesion %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\informacion.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Close_Icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\repetir.png" />
+    <None Include="Resources\punta-de-flecha-del-boton-de-reproduccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pausa.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

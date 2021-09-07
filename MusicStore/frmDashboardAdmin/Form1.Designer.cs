@@ -33,6 +33,7 @@ namespace frmDashboardAdmin
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblUsername = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnResumen = new System.Windows.Forms.Button();
             this.btnInfo = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -46,6 +47,7 @@ namespace frmDashboardAdmin
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(31)))));
+            this.panel1.Controls.Add(this.btnResumen);
             this.panel1.Controls.Add(this.btnInfo);
             this.panel1.Controls.Add(this.btnSalir);
             this.panel1.Controls.Add(this.lblUsername);
@@ -87,6 +89,24 @@ namespace frmDashboardAdmin
             this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // btnResumen
+            // 
+            this.btnResumen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(31)))));
+            this.btnResumen.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(31)))));
+            this.btnResumen.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnResumen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.btnResumen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResumen.Font = new System.Drawing.Font("Century Gothic", 11F);
+            this.btnResumen.ForeColor = System.Drawing.Color.White;
+            this.btnResumen.Image = global::frmDashboardAdmin.Properties.Resources.resumen;
+            this.btnResumen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnResumen.Location = new System.Drawing.Point(13, 123);
+            this.btnResumen.Name = "btnResumen";
+            this.btnResumen.Size = new System.Drawing.Size(222, 34);
+            this.btnResumen.TabIndex = 6;
+            this.btnResumen.Text = "RESUMEN";
+            this.btnResumen.UseVisualStyleBackColor = false;
+            // 
             // btnInfo
             // 
             this.btnInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(31)))));
@@ -98,7 +118,7 @@ namespace frmDashboardAdmin
             this.btnInfo.ForeColor = System.Drawing.Color.White;
             this.btnInfo.Image = global::frmDashboardAdmin.Properties.Resources.informacion;
             this.btnInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInfo.Location = new System.Drawing.Point(13, 252);
+            this.btnInfo.Location = new System.Drawing.Point(13, 283);
             this.btnInfo.Name = "btnInfo";
             this.btnInfo.Size = new System.Drawing.Size(222, 34);
             this.btnInfo.TabIndex = 5;
@@ -144,7 +164,7 @@ namespace frmDashboardAdmin
             this.btnClientes.ForeColor = System.Drawing.Color.White;
             this.btnClientes.Image = global::frmDashboardAdmin.Properties.Resources.clientes;
             this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClientes.Location = new System.Drawing.Point(13, 212);
+            this.btnClientes.Location = new System.Drawing.Point(13, 243);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(222, 34);
             this.btnClientes.TabIndex = 1;
@@ -162,7 +182,7 @@ namespace frmDashboardAdmin
             this.btnVentas.ForeColor = System.Drawing.Color.White;
             this.btnVentas.Image = global::frmDashboardAdmin.Properties.Resources.ventas;
             this.btnVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVentas.Location = new System.Drawing.Point(13, 172);
+            this.btnVentas.Location = new System.Drawing.Point(13, 203);
             this.btnVentas.Name = "btnVentas";
             this.btnVentas.Size = new System.Drawing.Size(222, 34);
             this.btnVentas.TabIndex = 1;
@@ -180,7 +200,7 @@ namespace frmDashboardAdmin
             this.btnAlbumes.ForeColor = System.Drawing.Color.White;
             this.btnAlbumes.Image = ((System.Drawing.Image)(resources.GetObject("btnAlbumes.Image")));
             this.btnAlbumes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAlbumes.Location = new System.Drawing.Point(13, 132);
+            this.btnAlbumes.Location = new System.Drawing.Point(13, 163);
             this.btnAlbumes.Name = "btnAlbumes";
             this.btnAlbumes.Size = new System.Drawing.Size(222, 34);
             this.btnAlbumes.TabIndex = 0;
@@ -197,7 +217,7 @@ namespace frmDashboardAdmin
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
-            this.Opacity = 0.98D;
+            this.Opacity = 0.99D;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -217,6 +237,7 @@ namespace frmDashboardAdmin
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnInfo;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnResumen;
     }
 }
 
