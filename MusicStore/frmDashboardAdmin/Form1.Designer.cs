@@ -209,6 +209,7 @@ namespace frmDashboardAdmin
             this.lblHora.Size = new System.Drawing.Size(136, 45);
             this.lblHora.TabIndex = 7;
             this.lblHora.Text = "label1";
+            this.lblHora.Click += new System.EventHandler(this.lblHora_Click);
             // 
             // lblFecha
             // 

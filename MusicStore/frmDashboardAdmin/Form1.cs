@@ -27,5 +27,10 @@ namespace frmDashboardAdmin
             lblHora.Text = DateTime.Now.ToString("h:mm:ss");
             lblFecha.Text = DateTime.Now.ToLongDateString();
         }
+
+        private void lblHora_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
