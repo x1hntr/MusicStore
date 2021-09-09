@@ -86,5 +86,20 @@ namespace frmPreview
         {
             ActualizarDatosTrack();
         }
+
+       
+
+        private void mtbVolumen_ValueChanged(object sender, decimal value)
+        {
+            wmPlayer.settings.volume = mtbVolumen.Value;
+        }
+
+        private void mtbDuracion_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (wmPlayer.playState == WMPLib.WMPPlayState.wmppsPlaying)
+            {
+                wmPlayer.Ctlcontrols.currentPosition = wmPlayer.currentMedia.duration * e.X / mtbDuracion.Width;
+            }
+        }
     }
 }

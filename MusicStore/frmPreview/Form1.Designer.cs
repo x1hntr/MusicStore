@@ -106,6 +106,7 @@ namespace frmPreview
             this.mtbVolumen.TrackLineHeight = 3;
             this.mtbVolumen.TrackLineSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(93)))), ((int)(((byte)(90)))));
             this.mtbVolumen.Value = 0;
+            this.mtbVolumen.ValueChanged += new XComponent.SliderBar.ValueChangedHandler(this.mtbVolumen_ValueChanged);
             // 
             // wmPlayer
             // 
@@ -223,6 +224,7 @@ namespace frmPreview
             this.mtbDuracion.TrackLineHeight = 3;
             this.mtbDuracion.TrackLineSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
             this.mtbDuracion.Value = 100;
+            this.mtbDuracion.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mtbDuracion_MouseDown);
             // 
             // lblHora
             // 
