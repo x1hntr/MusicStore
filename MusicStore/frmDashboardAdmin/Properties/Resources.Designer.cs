@@ -63,9 +63,9 @@ namespace frmDashboardAdmin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap boton_de_play__1_ {
+        internal static System.Drawing.Bitmap bolsa_dinero {
             get {
-                object obj = ResourceManager.GetObject("boton_de_play__1_", resourceCulture);
+                object obj = ResourceManager.GetObject("bolsa_dinero", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

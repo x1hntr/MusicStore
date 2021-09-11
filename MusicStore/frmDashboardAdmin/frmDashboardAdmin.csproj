@@ -163,5 +163,17 @@
   <ItemGroup>
     <None Include="Resources\boton-de-play %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bolsa-de-dinero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bolsa-de-dinero %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bolsa-de-dinero %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bolsa dinero.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
