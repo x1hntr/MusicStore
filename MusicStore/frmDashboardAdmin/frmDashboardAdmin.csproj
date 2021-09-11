@@ -175,5 +175,26 @@
   <ItemGroup>
     <None Include="Resources\bolsa dinero.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vision.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardarraya.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\klipartz.com %2827%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

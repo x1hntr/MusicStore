@@ -16,5 +16,10 @@ namespace frmDashboardAdmin
         {
             InitializeComponent();
         }
+
+        private void bntCreate_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Creado disco nuevo", "Ok");
+        }
     }
 }

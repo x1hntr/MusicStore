@@ -103,9 +103,39 @@ namespace frmDashboardAdmin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Github {
+            get {
+                object obj = ResourceManager.GetObject("Github", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap guardarraya {
+            get {
+                object obj = ResourceManager.GetObject("guardarraya", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap informacion {
             get {
                 object obj = ResourceManager.GetObject("informacion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mas {
+            get {
+                object obj = ResourceManager.GetObject("mas", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -117,6 +147,16 @@ namespace frmDashboardAdmin.Properties {
             get {
                 object obj = ResourceManager.GetObject("quema_de_cd", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap refresh {
+            get {
+                object obj = ResourceManager.GetObject("refresh", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -143,6 +183,16 @@ namespace frmDashboardAdmin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap trash {
+            get {
+                object obj = ResourceManager.GetObject("trash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap usuario {
             get {
                 object obj = ResourceManager.GetObject("usuario", resourceCulture);
@@ -156,6 +206,16 @@ namespace frmDashboardAdmin.Properties {
         internal static System.Drawing.Bitmap ventas {
             get {
                 object obj = ResourceManager.GetObject("ventas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vision {
+            get {
+                object obj = ResourceManager.GetObject("vision", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
