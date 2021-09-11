@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5A2F36F0-82AA-420A-9AA4-EEC706E44F96}</ProjectGuid>
+    <ProjectGuid>{A1DA77AF-6709-4907-A0F5-CA5516B3155A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>frmDashboardAdmin</RootNamespace>
-    <AssemblyName>frmDashboardAdmin</AssemblyName>
+    <RootNamespace>frmInformacion</RootNamespace>
+    <AssemblyName>frmInformacion</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,55 +52,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAlbumes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAlbumes.Designer.cs">
-      <DependentUpon>frmAlbumes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmClientes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmClientes.Designer.cs">
-      <DependentUpon>frmClientes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmInformacion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmInformacion.Designer.cs">
-      <DependentUpon>frmInformacion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmResumen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmResumen.Designer.cs">
-      <DependentUpon>frmResumen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmVentas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmVentas.Designer.cs">
-      <DependentUpon>frmVentas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmAlbumes.resx">
-      <DependentUpon>frmAlbumes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmClientes.resx">
-      <DependentUpon>frmClientes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmInformacion.resx">
-      <DependentUpon>frmInformacion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmResumen.resx">
-      <DependentUpon>frmResumen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmVentas.resx">
-      <DependentUpon>frmVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -110,9 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -125,42 +78,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Diseño sin título %2830%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\quema-de-cd.svg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\quema-de-cd.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\quema-de-cd %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\carrito-de-compras %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\grupo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\usuario.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cerrar-sesion %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\informacion.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Close_Icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\repetir.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\boton-de-play %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

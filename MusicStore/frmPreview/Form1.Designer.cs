@@ -46,8 +46,8 @@ namespace frmPreview
             this.lblHora = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.horaFecha = new System.Windows.Forms.Timer(this.components);
-            this.lstCanciones = new System.Windows.Forms.ListBox();
             this.timerDuracion = new System.Windows.Forms.Timer(this.components);
+            this.lstCanciones = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.wmPlayer)).BeginInit();
@@ -253,20 +253,24 @@ namespace frmPreview
             this.horaFecha.Enabled = true;
             this.horaFecha.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // lstCanciones
-            // 
-            this.lstCanciones.FormattingEnabled = true;
-            this.lstCanciones.Location = new System.Drawing.Point(348, 188);
-            this.lstCanciones.Name = "lstCanciones";
-            this.lstCanciones.Size = new System.Drawing.Size(185, 108);
-            this.lstCanciones.TabIndex = 7;
-            this.lstCanciones.SelectedIndexChanged += new System.EventHandler(this.lstCanciones_SelectedIndexChanged);
-            // 
             // timerDuracion
             // 
             this.timerDuracion.Enabled = true;
             this.timerDuracion.Interval = 1;
             this.timerDuracion.Tick += new System.EventHandler(this.timerDuracion_Tick);
+            // 
+            // lstCanciones
+            // 
+            this.lstCanciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.lstCanciones.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.lstCanciones.ForeColor = System.Drawing.Color.LightGray;
+            this.lstCanciones.FormattingEnabled = true;
+            this.lstCanciones.ItemHeight = 17;
+            this.lstCanciones.Location = new System.Drawing.Point(295, 93);
+            this.lstCanciones.Name = "lstCanciones";
+            this.lstCanciones.Size = new System.Drawing.Size(483, 276);
+            this.lstCanciones.TabIndex = 7;
+            this.lstCanciones.SelectedIndexChanged += new System.EventHandler(this.lstCanciones_SelectedIndexChanged);
             // 
             // Form1
             // 
@@ -305,11 +309,11 @@ namespace frmPreview
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Timer horaFecha;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox lstCanciones;
         private AxWMPLib.AxWindowsMediaPlayer wmPlayer;
         private XComponent.SliderBar.MACTrackBar mtbVolumen;
         private XComponent.SliderBar.MACTrackBar mtbDuracion;
         private System.Windows.Forms.Timer timerDuracion;
+        private System.Windows.Forms.ListBox lstCanciones;
     }
 }
 

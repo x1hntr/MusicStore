@@ -15,6 +15,7 @@ namespace frmDashboardAdmin
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -31,6 +32,43 @@ namespace frmDashboardAdmin
         private void lblHora_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void abrirFormularioHijo(object formHijo) {
+            if (this.pnlContenedor.Controls.Count > 0) {
+                     this.pnlContenedor.Controls.RemoveAt(0);
+                Form fh = formHijo as Form;
+                fh.TopLevel = false;
+                fh.Dock = DockStyle.Fill;
+                this.pnlContenedor.Controls.Add(fh);
+                this.pnlContenedor.Tag = fh;
+                fh.Show(); 
+            }
+        }
+
+        private void btnInfo_Click(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new frmInformacion());
+        }
+
+        private void btnResumen_Click(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new frmResumen());
+        }
+
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new frmVentas());
+        }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new frmClientes());
+        }
+
+        private void btnAlbumes_Click(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new frmAlbumes());
         }
     }
 }
