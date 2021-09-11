@@ -34,11 +34,6 @@ namespace frmDashboardAdmin
             this.horaFecha = new System.Windows.Forms.Timer(this.components);
             this.lblUsername = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblFecha = new System.Windows.Forms.Label();
-            this.lblHora = new System.Windows.Forms.Label();
-            this.pnlContenedor = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnResumen = new System.Windows.Forms.Button();
             this.btnInfo = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
@@ -46,10 +41,15 @@ namespace frmDashboardAdmin
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnVentas = new System.Windows.Forms.Button();
             this.btnAlbumes = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.lblHora = new System.Windows.Forms.Label();
+            this.pnlContenedor = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.pnlContenedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // horaFecha
@@ -84,59 +84,6 @@ namespace frmDashboardAdmin
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(238, 600);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.lblFecha);
-            this.panel2.Controls.Add(this.lblHora);
-            this.panel2.Location = new System.Drawing.Point(244, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(694, 100);
-            this.panel2.TabIndex = 9;
-            // 
-            // lblFecha
-            // 
-            this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Century Gothic", 18F);
-            this.lblFecha.ForeColor = System.Drawing.Color.White;
-            this.lblFecha.Location = new System.Drawing.Point(6, 59);
-            this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(86, 30);
-            this.lblFecha.TabIndex = 8;
-            this.lblFecha.Text = "label1";
-            // 
-            // lblHora
-            // 
-            this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Century Gothic", 28F);
-            this.lblHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.lblHora.Location = new System.Drawing.Point(3, 14);
-            this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(136, 45);
-            this.lblHora.TabIndex = 7;
-            this.lblHora.Text = "label1";
-            this.lblHora.Click += new System.EventHandler(this.lblHora_Click);
-            // 
-            // pnlContenedor
-            // 
-            this.pnlContenedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
-            this.pnlContenedor.Controls.Add(this.label1);
-            this.pnlContenedor.Location = new System.Drawing.Point(244, 108);
-            this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(694, 480);
-            this.pnlContenedor.TabIndex = 10;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(235, 55);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "hola";
             // 
             // btnResumen
             // 
@@ -262,6 +209,59 @@ namespace frmDashboardAdmin
             this.btnAlbumes.UseVisualStyleBackColor = false;
             this.btnAlbumes.Click += new System.EventHandler(this.btnAlbumes_Click);
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.lblFecha);
+            this.panel2.Controls.Add(this.lblHora);
+            this.panel2.Location = new System.Drawing.Point(244, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(694, 100);
+            this.panel2.TabIndex = 9;
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Century Gothic", 18F);
+            this.lblFecha.ForeColor = System.Drawing.Color.White;
+            this.lblFecha.Location = new System.Drawing.Point(6, 59);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(86, 30);
+            this.lblFecha.TabIndex = 8;
+            this.lblFecha.Text = "label1";
+            // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.Font = new System.Drawing.Font("Century Gothic", 28F);
+            this.lblHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.lblHora.Location = new System.Drawing.Point(3, 14);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(136, 45);
+            this.lblHora.TabIndex = 7;
+            this.lblHora.Text = "label1";
+            this.lblHora.Click += new System.EventHandler(this.lblHora_Click);
+            // 
+            // pnlContenedor
+            // 
+            this.pnlContenedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
+            this.pnlContenedor.Controls.Add(this.label1);
+            this.pnlContenedor.Location = new System.Drawing.Point(244, 108);
+            this.pnlContenedor.Name = "pnlContenedor";
+            this.pnlContenedor.Size = new System.Drawing.Size(694, 480);
+            this.pnlContenedor.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(8, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Resumen";
+            // 
             // Form1
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -279,11 +279,11 @@ namespace frmDashboardAdmin
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.pnlContenedor.ResumeLayout(false);
             this.pnlContenedor.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

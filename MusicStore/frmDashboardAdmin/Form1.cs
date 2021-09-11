@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.IO;
 namespace frmDashboardAdmin
 {
     public partial class Form1 : Form
@@ -15,7 +15,7 @@ namespace frmDashboardAdmin
         public Form1()
         {
             InitializeComponent();
-
+            abrirFormularioHijo(new frmResumen());
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -70,5 +70,7 @@ namespace frmDashboardAdmin
         {
             abrirFormularioHijo(new frmAlbumes());
         }
+
+     
     }
 }
