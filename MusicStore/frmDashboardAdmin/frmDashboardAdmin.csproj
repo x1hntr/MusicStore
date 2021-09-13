@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AccesoDatos">
+      <HintPath>..\..\..\..\..\Downloads\Negocio\Negocio\AccesoDatos\bin\Debug\AccesoDatos.dll</HintPath>
+    </Reference>
+    <Reference Include="Negocio">
+      <HintPath>..\..\..\..\..\Downloads\Negocio\Negocio\Negocio\bin\Debug\Negocio.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms.DataVisualization" />

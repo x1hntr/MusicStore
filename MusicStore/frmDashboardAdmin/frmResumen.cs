@@ -24,5 +24,7 @@ namespace frmDashboardAdmin
             lblAlbumes.Text = ventas.ToString();
             lblCaja.Text = ventas.ToString();
         }
+
+        
     }
 }
