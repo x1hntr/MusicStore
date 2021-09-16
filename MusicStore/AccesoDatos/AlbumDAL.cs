@@ -53,7 +53,7 @@ namespace AccesoDatos
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "editarAlbum ";
             comando.CommandType = CommandType.StoredProcedure;
-
+            comando.Parameters.AddWithValue("@id", id);
             comando.Parameters.AddWithValue("@stock", stock);
             comando.Parameters.AddWithValue("@nombre", nombre);
             comando.Parameters.AddWithValue("@genero", genero);

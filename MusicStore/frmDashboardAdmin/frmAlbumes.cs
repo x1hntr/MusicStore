@@ -23,11 +23,7 @@ namespace frmDashboardAdmin
         public frmAlbumes()
         {
             InitializeComponent();
-        }
-
-        
-
-      
+        } 
 
         private void btnRead_Click(object sender, EventArgs e)
         {
@@ -87,7 +83,8 @@ namespace frmDashboardAdmin
             }
             if (editar == true)
             {
-                al.editarAlbum(id, Convert.ToInt32(txtStock.Text), txtNombre.Text, txtGenero.Text, Convert.ToDateTime(mtbFecha.Text), txtPortada.Text, Convert.ToInt32(txtPrecio.Text), Convert.ToInt32(txtIdArtista.Text));
+                
+                al.editarAlbum(id, Convert.ToInt32(txtStock.Text), txtNombre.Text, txtGenero.Text, Convert.ToDateTime(mtbFecha.Text), txtPortada.Text, Convert.ToInt32(txtPrecio.Text), Int32.Parse(txtIdArtista.Text));
                 MessageBox.Show("Se ha modificado el álbum corretamente");
                 txtStock.Text = "";
                 txtNombre.Text = "";

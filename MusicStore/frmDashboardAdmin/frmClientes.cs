@@ -15,17 +15,47 @@ namespace frmDashboardAdmin
 
     public partial class frmClientes : Form
     {
-        UsuarioCPN usuario = new UsuarioCPN();
+        UsuarioCPN us = new UsuarioCPN();
+        private string id = null;
+        bool editar = false;
+        int administrador;
         public frmClientes()
         {
             InitializeComponent();
         }
 
-        private void btnCargarInfo_Click(object sender, EventArgs e)
+        private void btnRead_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Crear usuario", "ok");
-            UsuarioCPN user = new UsuarioCPN();
-            dataGridView1.DataSource = user.MostrarUsuarios();
+            UsuarioCPN us = new UsuarioCPN();
+            dgvUsuario.DataSource = us.MostrarUsuarios();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            if (chkAdministrador.Checked)
+            {
+                administrador = 1;
+            }
+            else
+                administrador = 0;
+            if (editar == false)
+            {
+                us.insertarUsuario(txtNombre.Text, txtApellido.Text, txtUsername.Text, administrador, txtPassword.Text);
+                MessageBox.Show("Se ha insertado un nuevo usuario corretamente");
+                txtNombre.Text = "";
+                txtApellido.Text = "";
+                txtUsername.Text = "";
+                txtPassword.Text = "";
+                UsuarioCPN us1 = new UsuarioCPN();
+                dgvUsuario.DataSource = us1.MostrarUsuarios();
+
+            }
+            if (editar == true)
+            {
+
+                
+
+            }
         }
     }
 }

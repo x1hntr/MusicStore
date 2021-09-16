@@ -150,6 +150,7 @@ namespace frmDashboardAdmin
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 11F);
             this.label7.ForeColor = System.Drawing.Color.LightGray;
@@ -161,6 +162,7 @@ namespace frmDashboardAdmin
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label6.ForeColor = System.Drawing.Color.LightGray;
@@ -172,6 +174,7 @@ namespace frmDashboardAdmin
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label5.ForeColor = System.Drawing.Color.LightGray;
@@ -183,6 +186,7 @@ namespace frmDashboardAdmin
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label4.ForeColor = System.Drawing.Color.LightGray;
@@ -194,6 +198,7 @@ namespace frmDashboardAdmin
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label3.ForeColor = System.Drawing.Color.LightGray;
@@ -205,6 +210,7 @@ namespace frmDashboardAdmin
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label2.ForeColor = System.Drawing.Color.LightGray;
@@ -216,6 +222,7 @@ namespace frmDashboardAdmin
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label1.ForeColor = System.Drawing.Color.LightGray;
@@ -415,16 +422,16 @@ namespace frmDashboardAdmin
             this.panel4.Controls.Add(this.btnRead);
             this.panel4.Location = new System.Drawing.Point(621, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(33, 29);
+            this.panel4.Size = new System.Drawing.Size(58, 29);
             this.panel4.TabIndex = 1;
             // 
             // btnRead
             // 
             this.btnRead.Location = new System.Drawing.Point(3, 5);
             this.btnRead.Name = "btnRead";
-            this.btnRead.Size = new System.Drawing.Size(27, 23);
+            this.btnRead.Size = new System.Drawing.Size(52, 23);
             this.btnRead.TabIndex = 0;
-            this.btnRead.Text = "button3";
+            this.btnRead.Text = "Refresh";
             this.btnRead.UseVisualStyleBackColor = true;
             this.btnRead.Click += new System.EventHandler(this.btnRead_Click);
             // 

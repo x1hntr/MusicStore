@@ -25,7 +25,7 @@ namespace Negocio
         }
         public void editarAlbum(string id,int stock, string nombre, string genero, DateTime fechaLanzamiento, string portada, decimal precio, int id_Artista)
         {
-            al.editarAlbum(Convert.ToInt32(id), stock, nombre, genero, fechaLanzamiento, portada, precio, id_Artista);
+            al.editarAlbum(Int32.Parse(id), stock, nombre, genero, fechaLanzamiento, portada, precio, id_Artista);
 
         }
         public void eliminarAlbum(string id)
