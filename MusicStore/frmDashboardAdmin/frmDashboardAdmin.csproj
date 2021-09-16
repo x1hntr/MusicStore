@@ -62,11 +62,13 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AccesoDatos">
-      <HintPath>..\..\..\..\..\Downloads\Negocio\Negocio\AccesoDatos\bin\Debug\AccesoDatos.dll</HintPath>
+    <Reference Include="AccesoDatos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Negocio\bin\Debug\AccesoDatos.dll</HintPath>
     </Reference>
-    <Reference Include="Negocio">
-      <HintPath>..\..\..\..\..\Downloads\Negocio\Negocio\Negocio\bin\Debug\Negocio.dll</HintPath>
+    <Reference Include="Negocio, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Negocio\bin\Debug\Negocio.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -255,6 +257,15 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

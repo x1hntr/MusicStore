@@ -7,9 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using AccesoDatos;
 using Negocio;
-
 
 namespace frmDashboardAdmin
 {
@@ -17,7 +15,7 @@ namespace frmDashboardAdmin
 
     public partial class frmClientes : Form
     {
-        Usuario usuarioCN = new Usuario();
+        UsuarioCPN usuario = new UsuarioCPN();
         public frmClientes()
         {
             InitializeComponent();
@@ -26,7 +24,7 @@ namespace frmDashboardAdmin
         private void btnCargarInfo_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Crear usuario", "ok");
-            Usuario user = new Usuario();
+            UsuarioCPN user = new UsuarioCPN();
             dataGridView1.DataSource = user.MostrarUsuarios();
         }
     }
