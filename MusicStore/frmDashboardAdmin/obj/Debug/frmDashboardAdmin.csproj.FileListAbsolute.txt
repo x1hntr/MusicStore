@@ -20,3 +20,7 @@ C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmDashboardAdmin\bi
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmDashboardAdmin\bin\Debug\Negocio.pdb
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmDashboardAdmin\obj\Debug\frmDashboardAdmin.csproj.CopyComplete
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmDashboardAdmin\obj\Debug\frmDashboardAdmin.frmArtista.resources
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmDashboardAdmin\bin\Debug\frmDashboardAdmin.exe.manifest
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmDashboardAdmin\bin\Debug\frmDashboardAdmin.application
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmDashboardAdmin\obj\Debug\frmDashboardAdmin.exe.manifest
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmDashboardAdmin\obj\Debug\frmDashboardAdmin.application
