@@ -19,7 +19,7 @@ namespace frmDashboardAdmin
             InitializeComponent();
             abrirFormularioHijo(new frmResumen());
         }
-
+       
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -66,6 +66,7 @@ namespace frmDashboardAdmin
         private void btnClientes_Click(object sender, EventArgs e)
         {
             abrirFormularioHijo(new frmClientes());
+
         }
 
         private void btnAlbumes_Click(object sender, EventArgs e)
@@ -73,6 +74,9 @@ namespace frmDashboardAdmin
             abrirFormularioHijo(new frmAlbumes());
         }
 
-     
+        private void btnArtista_Click(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new frmArtista());
+        }
     }
 }

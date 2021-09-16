@@ -7,25 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using AccesoDatos;
-using Negocio;
 
 namespace frmDashboardAdmin
 {
-    public partial class frmAlbumes : Form
+    public partial class frmArtista : Form
     {
-        public frmAlbumes()
+        public frmArtista()
         {
             InitializeComponent();
         }
 
-        
-
-        private void btnCreate_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Creado disco nuevo", "Ok");
-        }
-
-        
     }
 }

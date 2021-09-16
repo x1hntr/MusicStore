@@ -22,17 +22,12 @@ namespace frmDashboardAdmin
         {
             InitializeComponent();
         }
-        private void frmClientes_Load(object sender, EventArgs e)
+
+        private void btnCargarInfo_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Crear usuario", "ok");
             Usuario user = new Usuario();
-           // dataGridView1.DataSource = user.MostrarUsuarios();
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Se mostro los usuarios", "Ok");
-            Usuario user = new Usuario();
-          //  dataGridView1.DataSource = user.MostrarUsuarios();
-            
+            dataGridView1.DataSource = user.MostrarUsuarios();
         }
     }
 }

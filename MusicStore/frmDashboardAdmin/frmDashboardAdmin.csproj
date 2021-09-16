@@ -65,6 +65,12 @@
     <Compile Include="frmAlbumes.Designer.cs">
       <DependentUpon>frmAlbumes.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmArtista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArtista.Designer.cs">
+      <DependentUpon>frmArtista.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAlbumes.resx">
       <DependentUpon>frmAlbumes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArtista.resx">
+      <DependentUpon>frmArtista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmClientes.resx">
       <DependentUpon>frmClientes.cs</DependentUpon>
@@ -201,6 +210,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\klipartz.com %2827%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\microfono.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
