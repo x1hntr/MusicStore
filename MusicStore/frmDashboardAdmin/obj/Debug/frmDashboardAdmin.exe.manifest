@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Od2A2aTgYZGmnh+yJFFAptmpxHmmvSgau0QFMI1KVUA=</dsig:DigestValue>
+        <dsig:DigestValue>Us0s9nqoEQdTzGJdu5XmBRriw/BrkBMlPWBqxgwB2mo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -66,14 +66,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="frmDashboardAdmin.exe" size="113632">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="frmDashboardAdmin.exe" size="114656">
       <assemblyIdentity name="frmDashboardAdmin" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Qn9yPw+38hnY9sJQIgTzWADf1Qvhz5i1tssklX5oOfU=</dsig:DigestValue>
+        <dsig:DigestValue>sP9FzKASe0oNAEjBlRQ44MpFy4s0eZNe4Mcfl/gbW6k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

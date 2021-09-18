@@ -45,8 +45,8 @@ namespace frmDashboardAdmin
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvArtista = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -249,8 +249,8 @@ namespace frmDashboardAdmin
             this.tableLayoutPanel6.ColumnCount = 2;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.button1, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.button2, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.btnEditar, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.btnEliminar, 1, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 236);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -259,27 +259,29 @@ namespace frmDashboardAdmin
             this.tableLayoutPanel6.Size = new System.Drawing.Size(538, 40);
             this.tableLayoutPanel6.TabIndex = 1;
             // 
-            // button1
+            // btnEditar
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(191, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 34);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Editar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnEditar.Location = new System.Drawing.Point(191, 3);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(75, 34);
+            this.btnEditar.TabIndex = 0;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
-            // button2
+            // btnEliminar
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.button2.Location = new System.Drawing.Point(272, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 34);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Eliminar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEliminar.Location = new System.Drawing.Point(272, 3);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(75, 34);
+            this.btnEliminar.TabIndex = 1;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // frmArtista
             // 
@@ -317,8 +319,8 @@ namespace frmDashboardAdmin
         private System.Windows.Forms.DataGridView dgvArtista;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txtNacionalidad;
         private System.Windows.Forms.TextBox txtNombre;

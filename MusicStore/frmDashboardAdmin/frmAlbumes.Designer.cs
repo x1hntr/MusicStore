@@ -42,7 +42,6 @@ namespace frmDashboardAdmin
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.mtbFecha = new System.Windows.Forms.MaskedTextBox();
             this.txtPortada = new System.Windows.Forms.TextBox();
             this.txtStock = new System.Windows.Forms.TextBox();
             this.txtIdArtista = new System.Windows.Forms.TextBox();
@@ -58,6 +57,7 @@ namespace frmDashboardAdmin
             this.btnEliminar = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnRead = new System.Windows.Forms.Button();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -128,6 +128,7 @@ namespace frmDashboardAdmin
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.dtpFecha);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
@@ -136,7 +137,6 @@ namespace frmDashboardAdmin
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.txtPrecio);
-            this.panel2.Controls.Add(this.mtbFecha);
             this.panel2.Controls.Add(this.txtPortada);
             this.panel2.Controls.Add(this.txtStock);
             this.panel2.Controls.Add(this.txtIdArtista);
@@ -244,20 +244,6 @@ namespace frmDashboardAdmin
             this.txtPrecio.Size = new System.Drawing.Size(269, 27);
             this.txtPrecio.TabIndex = 3;
             this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecio_KeyPress);
-            // 
-            // mtbFecha
-            // 
-            this.mtbFecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.mtbFecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
-            this.mtbFecha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.mtbFecha.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mtbFecha.ForeColor = System.Drawing.Color.LightGray;
-            this.mtbFecha.Location = new System.Drawing.Point(174, 77);
-            this.mtbFecha.Mask = "00/00/0000";
-            this.mtbFecha.Name = "mtbFecha";
-            this.mtbFecha.Size = new System.Drawing.Size(269, 23);
-            this.mtbFecha.TabIndex = 2;
-            this.mtbFecha.ValidatingType = typeof(System.DateTime);
             // 
             // txtPortada
             // 
@@ -439,6 +425,16 @@ namespace frmDashboardAdmin
             this.btnRead.UseVisualStyleBackColor = true;
             this.btnRead.Click += new System.EventHandler(this.btnRead_Click);
             // 
+            // dtpFecha
+            // 
+            this.dtpFecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtpFecha.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
+            this.dtpFecha.CalendarTrailingForeColor = System.Drawing.Color.LightGray;
+            this.dtpFecha.Location = new System.Drawing.Point(174, 80);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(189, 20);
+            this.dtpFecha.TabIndex = 16;
+            // 
             // frmAlbumes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -486,7 +482,6 @@ namespace frmDashboardAdmin
         private System.Windows.Forms.TextBox txtStock;
         private System.Windows.Forms.TextBox txtIdArtista;
         private System.Windows.Forms.TextBox txtPrecio;
-        private System.Windows.Forms.MaskedTextBox mtbFecha;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnRead;
         private System.Windows.Forms.Label label7;
@@ -496,5 +491,6 @@ namespace frmDashboardAdmin
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
     }
 }

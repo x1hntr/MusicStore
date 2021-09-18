@@ -30,20 +30,29 @@ namespace frmDashboardAdmin
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (editar == false)
+            if (txtNombre.Text !="" && txtNacionalidad.Text != "")
             {
-                ar.insertarArtista(txtNombre.Text, txtNacionalidad.Text);
-                txtNacionalidad.Text = "";
-                txtNombre.Text = "";
-                ArtistaCPN ar1 = new ArtistaCPN();
-                dgvArtista.DataSource = ar1.MostrarArtista();
-            }
-            if (editar == true)
-            {
+                if (editar == false)
+                {
+                    ar.insertarArtista(txtNombre.Text, txtNacionalidad.Text);
+                    txtNacionalidad.Text = "";
+                    txtNombre.Text = "";
+                    ArtistaCPN ar1 = new ArtistaCPN();
+                    dgvArtista.DataSource = ar1.MostrarArtista();
+                }
+                if (editar == true)
+                {
+                    ar.editarArtista(Int32.Parse(id), txtNombre.Text, txtNacionalidad.Text);
+                    MessageBox.Show("Se ha modificado el artista corretamente");
+                    txtNacionalidad.Text = "";
+                    txtNombre.Text = "";
 
-          
+                    ArtistaCPN ar1 = new ArtistaCPN();
+                    dgvArtista.DataSource = ar1.MostrarArtista();
 
-            }
+                }
+            }else
+                MessageBox.Show("Llene todos los campos para continuar", "Alert");
         }
 
         
@@ -64,6 +73,34 @@ namespace frmDashboardAdmin
                 e.Handled = true;
                 return;
             }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (dgvArtista.SelectedRows.Count > 0)
+            {
+                id = dgvArtista.CurrentRow.Cells["idArtista"].Value.ToString();
+                ar.eliminarArtista(Int32.Parse(id));
+                MessageBox.Show("Eliminado correctamente");
+                ArtistaCPN al1 = new ArtistaCPN();
+               dgvArtista.DataSource = al1.MostrarArtista();
+
+            }
+            else
+                MessageBox.Show("Seleccione una fila para eliminar");
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (dgvArtista.SelectedRows.Count > 0)
+            {
+                editar = true;
+                id = dgvArtista.CurrentRow.Cells["idArtista"].Value.ToString();
+                txtNombre.Text = dgvArtista.CurrentRow.Cells["nombre"].Value.ToString();
+                txtNacionalidad.Text = dgvArtista.CurrentRow.Cells["Nacionalidad"].Value.ToString();
+            }
+            else
+                MessageBox.Show("Seleccione una fila para editar");
         }
     }
 }

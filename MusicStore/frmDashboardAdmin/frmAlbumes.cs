@@ -40,7 +40,7 @@ namespace frmDashboardAdmin
                 txtStock.Text = dataGridView1.CurrentRow.Cells["stock"].Value.ToString();
                 txtNombre.Text = dataGridView1.CurrentRow.Cells["nombre"].Value.ToString();
                 txtGenero.Text = dataGridView1.CurrentRow.Cells["genero"].Value.ToString();
-                mtbFecha.Text = dataGridView1.CurrentRow.Cells["fechaLanzamiento"].Value.ToString();
+               
                 txtPortada.Text = dataGridView1.CurrentRow.Cells["portada"].Value.ToString();
                 txtPrecio.Text = dataGridView1.CurrentRow.Cells["precio"].Value.ToString();
                 txtIdArtista.Text = dataGridView1.CurrentRow.Cells["id_Artista"].Value.ToString();
@@ -66,40 +66,43 @@ namespace frmDashboardAdmin
 
         private void btnCreate_Click_1(object sender, EventArgs e)
         {
-            if (editar == false)
+            if (txtNombre.Text!="" && txtGenero.Text!="" && txtPrecio.Text!= "" && txtIdArtista.Text!= "" && txtStock.Text!= "" && txtPortada.Text!= "")
             {
-                al.insertarAlbum(Int32.Parse(txtStock.Text), txtNombre.Text, txtGenero.Text, Convert.ToDateTime(mtbFecha.Text), txtPortada.Text, Convert.ToDecimal(txtPrecio.Text), Int32.Parse(txtIdArtista.Text));
-                MessageBox.Show("Se ha insertado un nuevo álbum corretamente");
-                txtStock.Text = "";
-                txtNombre.Text = "";
-                txtGenero.Text = "";
-                mtbFecha.Text = "";
-                txtPortada.Text = "";
-                txtPrecio.Text = "";
-                txtIdArtista.Text = "";
-                AlbumCPN al1 = new AlbumCPN();
-                dataGridView1.DataSource = al1.MostrarAlbum();
-
-            }
-            if (editar == true)
-            {
-
-                
-
-                al.editarAlbum(id, txtNombre.Text, txtGenero.Text, Int32.Parse(txtStock.Text), Convert.ToDateTime(mtbFecha.Text), Int32.Parse(txtIdArtista.Text), decimal.Parse(txtPrecio.Text), txtPortada.Text);
-                    MessageBox.Show("Se ha modificado el álbum corretamente");
+                if (editar == false)
+                {
+                    al.insertarAlbum(Int32.Parse(txtStock.Text), txtNombre.Text, txtGenero.Text, Convert.ToDateTime(dtpFecha.Value.ToString()), txtPortada.Text, Convert.ToDecimal(txtPrecio.Text), Int32.Parse(txtIdArtista.Text));
+                    MessageBox.Show("Se ha insertado un nuevo álbum corretamente");
                     txtStock.Text = "";
                     txtNombre.Text = "";
                     txtGenero.Text = "";
-                    mtbFecha.Text = "";
+
                     txtPortada.Text = "";
                     txtPrecio.Text = "";
                     txtIdArtista.Text = "";
                     AlbumCPN al1 = new AlbumCPN();
                     dataGridView1.DataSource = al1.MostrarAlbum();
 
-                
-            }
+                }
+                if (editar == true)
+                {
+
+                    {
+                        al.editarAlbum(id, txtNombre.Text, txtGenero.Text, Int32.Parse(txtStock.Text), Convert.ToDateTime(dtpFecha.Value.ToString()), Int32.Parse(txtIdArtista.Text), Int32.Parse(txtPrecio.Text), txtPortada.Text);
+                        MessageBox.Show("Se ha modificado el álbum corretamente");
+                        txtStock.Text = "";
+                        txtNombre.Text = "";
+                        txtGenero.Text = "";
+
+                        txtPortada.Text = "";
+                        txtPrecio.Text = "";
+                        txtIdArtista.Text = "";
+                        AlbumCPN al1 = new AlbumCPN();
+                        dataGridView1.DataSource = al1.MostrarAlbum();
+
+                    }
+                }
+            } else
+                MessageBox.Show("Llene todos los campos para continuar", "Alert");
         }
 
         private void txtGenero_KeyPress(object sender, KeyPressEventArgs e)

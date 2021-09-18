@@ -57,7 +57,6 @@ namespace AccesoDatos
         }
         public void eliminarArtista(int id)
         {
-
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "eliminarArtista";
             comando.CommandType = CommandType.StoredProcedure;
