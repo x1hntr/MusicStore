@@ -54,7 +54,7 @@ namespace frmDashboardAdmin
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 id = dataGridView1.CurrentRow.Cells["idAlbum"].Value.ToString();
-                al.eliminarAlbum(id);
+                al.eliminarAlbum(Int32.Parse(id));
                 MessageBox.Show("eliminado correctamente");
                 AlbumCPN al1 = new AlbumCPN();
                 dataGridView1.DataSource = al1.MostrarAlbum();
@@ -83,8 +83,10 @@ namespace frmDashboardAdmin
             }
             if (editar == true)
             {
- 
-                    al.editarAlbum(id, txtNombre.Text, txtGenero.Text, Int32.Parse(txtStock.Text), Convert.ToDateTime(mtbFecha.Text), Int32.Parse(txtIdArtista.Text), decimal.Parse(txtPrecio.Text), txtPortada.Text);
+
+                
+
+                al.editarAlbum(id, txtNombre.Text, txtGenero.Text, Int32.Parse(txtStock.Text), Convert.ToDateTime(mtbFecha.Text), Int32.Parse(txtIdArtista.Text), decimal.Parse(txtPrecio.Text), txtPortada.Text);
                     MessageBox.Show("Se ha modificado el álbum corretamente");
                     txtStock.Text = "";
                     txtNombre.Text = "";

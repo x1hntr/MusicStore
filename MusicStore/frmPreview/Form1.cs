@@ -35,18 +35,22 @@ namespace frmPreview
                 ArchivosMP3 = CajaDeBusquedadeArchivos.SafeFileNames;
                 rutasArchivosMP3 = CajaDeBusquedadeArchivos.FileNames;
                 foreach (var ArchivoMP3 in ArchivosMP3) {
-                    lstCanciones.Items.Add(ArchivoMP3);
+                    lstArtistas.Items.Add(ArchivoMP3);
                 }
                 wmPlayer.URL = rutasArchivosMP3[0];
             }
         }
 
-        private void lstCanciones_SelectedIndexChanged(object sender, EventArgs e)
+        private void lstArtistas_SelectedIndexChanged(object sender, EventArgs e)
         {
-            wmPlayer.URL = rutasArchivosMP3[lstCanciones.SelectedIndex];
+            wmPlayer.URL = rutasArchivosMP3[lstArtistas.SelectedIndex];
             btnPlay.Image = Properties.Resources.pausa;
-            lbltitulo.Text = ArchivosMP3[lstCanciones.SelectedIndex];
+            lbltitulo.Text = ArchivosMP3[lstArtistas.SelectedIndex];
+            
         }
+
+    
+
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
@@ -101,5 +105,7 @@ namespace frmPreview
                 wmPlayer.Ctlcontrols.currentPosition = wmPlayer.currentMedia.duration * e.X / mtbDuracion.Width;
             }
         }
+
+     
     }
 }

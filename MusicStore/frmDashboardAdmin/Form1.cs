@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-
+using frmPreview;
 
 namespace frmDashboardAdmin
 {
@@ -61,6 +61,9 @@ namespace frmDashboardAdmin
         private void btnVentas_Click(object sender, EventArgs e)
         {
             abrirFormularioHijo(new frmVentas());
+            Form preview = new frmPreview.Form1();
+            preview.Show();
+          
         }
 
         private void btnClientes_Click(object sender, EventArgs e)

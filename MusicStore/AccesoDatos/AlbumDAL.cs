@@ -51,7 +51,6 @@ namespace AccesoDatos
         public void editarAlbum(int id, string nombre, string genero, int stock, DateTime fechaLanzamiento, int id_Artista, decimal precio, string portada)
         {
 
-
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "editarAlbummm ";
             comando.CommandType = CommandType.StoredProcedure;
@@ -64,16 +63,14 @@ namespace AccesoDatos
             comando.Parameters.AddWithValue("@precio", precio);
             comando.Parameters.AddWithValue("@portada", portada);
 
-
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
             conexion.CerrarConexion();
         }
         public void eliminarAlbum(int id)
         {
-
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "eliminarAlbum";
+            comando.CommandText = "eliminarAlbummm";
             comando.CommandType = CommandType.StoredProcedure;
             comando.Parameters.AddWithValue("@id", id);
             comando.ExecuteNonQuery();

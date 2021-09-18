@@ -22,6 +22,7 @@ namespace frmDashboardAdmin
         public frmClientes()
         {
             InitializeComponent();
+           
         }
 
         private void btnRead_Click(object sender, EventArgs e)
@@ -63,7 +64,7 @@ namespace frmDashboardAdmin
             if (dgvUsuario.SelectedRows.Count > 0)
             {
                 id = dgvUsuario.CurrentRow.Cells["idUsuario"].Value.ToString();
-                us.eliminarUsuario(Int32.Parse(id));
+                us.eliminarUsuario(id);
                 MessageBox.Show("eliminado correctamente");
                 AlbumCPN al1 = new AlbumCPN();
                 dgvUsuario.DataSource = al1.MostrarAlbum();
@@ -71,6 +72,25 @@ namespace frmDashboardAdmin
             }
             else
                 MessageBox.Show("Seleccione una fila para eliminar");
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (dgvUsuario.SelectedRows.Count > 0)
+            {
+                editar = true;
+                id =dgvUsuario.CurrentRow.Cells["idUsuario"].Value.ToString();
+                txtNombre.Text = dgvUsuario.CurrentRow.Cells["nombre"].Value.ToString();
+                txtApellido.Text = dgvUsuario.CurrentRow.Cells["apellido"].Value.ToString();
+                txtPassword.Text = dgvUsuario.CurrentRow.Cells["contrasenia"].Value.ToString();
+                txtUsername.Text = dgvUsuario.CurrentRow.Cells["username"].Value.ToString();
+                if (dgvUsuario.CurrentRow.Cells["administrador"].Value.ToString() == "1") {
+                    chkAdministrador.Checked = true;
+                }
+                
+            }
+            else
+                MessageBox.Show("Seleccione una fila para editar");
         }
     }
 }

@@ -29,10 +29,9 @@ namespace Negocio
 
 
         }
-        public void eliminarAlbum(string id)
+        public void eliminarAlbum(int id)
         {
-
-            al.eliminarAlbum(Convert.ToInt32(id));
+            al.eliminarAlbum(id);
         }
     }
 }

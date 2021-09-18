@@ -27,9 +27,9 @@ namespace Negocio
         {
             user.editarUsuario(id, nombre, apellido, username, administrador, contrasenia);
         }
-        public void eliminarUsuario(int id)
+        public void eliminarUsuario(string id)
         {
-            user.eliminarUsuario(id);
+            user.eliminarUsuario(Int32.Parse(id));
         }
 
 

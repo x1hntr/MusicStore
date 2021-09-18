@@ -66,6 +66,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Negocio\bin\Debug\AccesoDatos.dll</HintPath>
     </Reference>
+    <Reference Include="frmPreview">
+      <HintPath>..\frmPreview\bin\Debug\frmPreview.exe</HintPath>
+    </Reference>
     <Reference Include="Negocio, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Negocio\bin\Debug\Negocio.dll</HintPath>

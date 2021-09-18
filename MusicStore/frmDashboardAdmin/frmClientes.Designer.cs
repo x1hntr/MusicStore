@@ -329,6 +329,7 @@ namespace frmDashboardAdmin
             this.btnEditar.TabIndex = 0;
             this.btnEditar.Text = "EDITAR";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnEliminar
             // 

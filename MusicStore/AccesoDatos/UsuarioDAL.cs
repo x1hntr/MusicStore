@@ -69,6 +69,7 @@ namespace AccesoDatos
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "eliminarUsuario";
             comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@id", id);
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
             conexion.CerrarConexion();
