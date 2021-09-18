@@ -218,7 +218,7 @@ namespace frmDashboardAdmin
             this.btnRead.TabIndex = 0;
             this.btnRead.Text = "Refresh";
             this.btnRead.UseVisualStyleBackColor = true;
-            this.btnRead.Click += new System.EventHandler(this.btnRead_Click);
+          
             // 
             // tableLayoutPanel5
             // 
@@ -293,6 +293,7 @@ namespace frmDashboardAdmin
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmArtista";
             this.Text = "frmArtista";
+            this.Load += new System.EventHandler(this.frmArtista_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);

@@ -21,12 +21,7 @@ namespace frmDashboardAdmin
             InitializeComponent();
         }
 
-        private void btnRead_Click(object sender, EventArgs e)
-        {
-           
-                ArtistaCPN ar = new ArtistaCPN();
-                dgvArtista.DataSource = ar.MostrarArtista();
-        }
+       
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
@@ -42,14 +37,14 @@ namespace frmDashboardAdmin
                 }
                 if (editar == true)
                 {
-                    ar.editarArtista(Int32.Parse(id), txtNombre.Text, txtNacionalidad.Text);
+                    ar.editarArtista(id, txtNombre.Text, txtNacionalidad.Text);
                     MessageBox.Show("Se ha modificado el artista corretamente");
                     txtNacionalidad.Text = "";
                     txtNombre.Text = "";
-
+                    editar = false;
                     ArtistaCPN ar1 = new ArtistaCPN();
                     dgvArtista.DataSource = ar1.MostrarArtista();
-
+                    
                 }
             }else
                 MessageBox.Show("Llene todos los campos para continuar", "Alert");
@@ -80,7 +75,7 @@ namespace frmDashboardAdmin
             if (dgvArtista.SelectedRows.Count > 0)
             {
                 id = dgvArtista.CurrentRow.Cells["idArtista"].Value.ToString();
-                ar.eliminarArtista(Int32.Parse(id));
+                ar.eliminarArtista(id);
                 MessageBox.Show("Eliminado correctamente");
                 ArtistaCPN al1 = new ArtistaCPN();
                dgvArtista.DataSource = al1.MostrarArtista();
@@ -101,6 +96,12 @@ namespace frmDashboardAdmin
             }
             else
                 MessageBox.Show("Seleccione una fila para editar");
+        }
+
+        private void frmArtista_Load(object sender, EventArgs e)
+        {
+            ArtistaCPN ar = new ArtistaCPN();
+            dgvArtista.DataSource = ar.MostrarArtista();
         }
     }
 }

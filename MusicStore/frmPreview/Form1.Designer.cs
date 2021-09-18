@@ -52,6 +52,7 @@ namespace frmPreview
             this.lblHora = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lstArtistas = new System.Windows.Forms.ListBox();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.cmbCanciones = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -61,6 +62,7 @@ namespace frmPreview
             this.tableLayoutPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -308,7 +310,7 @@ namespace frmPreview
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.lstArtistas, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.cmbCanciones, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panel5, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 111);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -327,14 +329,24 @@ namespace frmPreview
             this.lstArtistas.Name = "lstArtistas";
             this.lstArtistas.Size = new System.Drawing.Size(256, 329);
             this.lstArtistas.TabIndex = 2;
+            this.lstArtistas.SelectedIndexChanged += new System.EventHandler(this.lstArtistas_SelectedIndexChanged);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.cmbCanciones);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(265, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(257, 330);
+            this.panel5.TabIndex = 3;
             // 
             // cmbCanciones
             // 
             this.cmbCanciones.FormattingEnabled = true;
-            this.cmbCanciones.Location = new System.Drawing.Point(265, 3);
+            this.cmbCanciones.Location = new System.Drawing.Point(41, 54);
             this.cmbCanciones.Name = "cmbCanciones";
-            this.cmbCanciones.Size = new System.Drawing.Size(257, 21);
-            this.cmbCanciones.TabIndex = 3;
+            this.cmbCanciones.Size = new System.Drawing.Size(121, 21);
+            this.cmbCanciones.TabIndex = 0;
             // 
             // Form1
             // 
@@ -357,6 +369,7 @@ namespace frmPreview
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -384,6 +397,7 @@ namespace frmPreview
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.ListBox lstArtistas;
+        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.ComboBox cmbCanciones;
     }
 }

@@ -24,14 +24,13 @@ namespace Negocio
             art.insertarArtista( nombre, nacionalidad);
 
         }
-        public void editarArtista(int id, string nombre, string nacionalidad)
+        public void editarArtista(string id, string nombre, string nacionalidad)
         {
-            art.editarArtista(id,  nombre,  nacionalidad);
-           
+            art.editarArtista(int.Parse(id),  nombre,  nacionalidad);
         }
-        public void eliminarArtista(int id)
+        public void eliminarArtista(string id)
         {
-            art.eliminarArtista(id);
+            art.eliminarArtista(int.Parse(id));
         }
     }
 }

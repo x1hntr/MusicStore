@@ -41,14 +41,7 @@ namespace frmPreview
             }
         }
 
-        private void lstArtistas_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            wmPlayer.URL = rutasArchivosMP3[lstArtistas.SelectedIndex];
-            btnPlay.Image = Properties.Resources.pausa;
-            lbltitulo.Text = ArchivosMP3[lstArtistas.SelectedIndex];
-            cmbCanciones.Items.Add(ArchivosMP3);
-        }
-
+      
     
 
 
@@ -106,6 +99,12 @@ namespace frmPreview
             }
         }
 
-     
+        private void lstArtistas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            wmPlayer.URL = rutasArchivosMP3[lstArtistas.SelectedIndex];
+            btnPlay.Image = Properties.Resources.pausa;
+            lbltitulo.Text = ArchivosMP3[lstArtistas.SelectedIndex];
+            cmbCanciones.Items.Add(ArchivosMP3[lstArtistas.SelectedIndex]);
+        }
     }
 }
