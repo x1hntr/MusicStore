@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using AccesoDatos;
 
 namespace AccesoDatos
 {
@@ -31,16 +32,18 @@ namespace AccesoDatos
 
         public void insertarArtista(string nombre, string nacionalidad)
         {
+          
+             
 
-            comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "insertarArtista";
-            comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@nombre", nombre);
-            comando.Parameters.AddWithValue("@nacionalidad", nacionalidad);
-            comando.ExecuteNonQuery();
-            comando.Parameters.Clear();
-            conexion.CerrarConexion();
-
+                comando.Connection = conexion.AbrirConexion();
+                comando.CommandText = "insertarArtista";
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.Parameters.AddWithValue("@nombre", nombre);
+                comando.Parameters.AddWithValue("@nacionalidad", nacionalidad);
+                comando.ExecuteNonQuery();
+                comando.Parameters.Clear();
+                conexion.CerrarConexion();
+            
         }
         public void editarArtista(int id, string nombre, string nacionalidad)
         {
@@ -63,6 +66,7 @@ namespace AccesoDatos
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
             conexion.CerrarConexion();
+
 
         }
     }

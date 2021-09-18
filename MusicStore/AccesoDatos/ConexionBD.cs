@@ -14,12 +14,8 @@ namespace AccesoDatos
     {
         private SqlConnection Conexion = new SqlConnection("Server=tcp:joureyes7.database.windows.net,1433;Initial Catalog=ProyectoBDD;Persist Security Info=False;User ID=administrador;Password=Proyecto12345;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
-
-
         public SqlConnection AbrirConexion()
-
-
-        {
+         {
             if (Conexion.State == ConnectionState.Closed)
                 Conexion.Open();
             return Conexion;

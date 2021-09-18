@@ -4,3 +4,5 @@ C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\AccesoDatos\obj\Debu
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\AccesoDatos\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\AccesoDatos\obj\Debug\AccesoDatos.dll
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\AccesoDatos\obj\Debug\AccesoDatos.pdb
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\AccesoDatos\obj\Debug\AccesoDatos.Properties.Resources.resources
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\AccesoDatos\obj\Debug\AccesoDatos.csproj.GenerateResource.cache

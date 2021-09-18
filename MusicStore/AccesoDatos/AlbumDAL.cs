@@ -63,8 +63,6 @@ namespace AccesoDatos
             comando.Parameters.AddWithValue("@id_Artista", id_Artista);
             comando.Parameters.AddWithValue("@precio", precio);
             comando.Parameters.AddWithValue("@portada", portada);
-
-
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
             conexion.CerrarConexion();
