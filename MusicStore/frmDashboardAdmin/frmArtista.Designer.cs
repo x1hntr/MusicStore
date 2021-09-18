@@ -172,6 +172,7 @@ namespace frmDashboardAdmin
             this.txtNacionalidad.Name = "txtNacionalidad";
             this.txtNacionalidad.Size = new System.Drawing.Size(269, 27);
             this.txtNacionalidad.TabIndex = 3;
+            this.txtNacionalidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNacionalidad_KeyPress);
             // 
             // txtNombre
             // 
@@ -183,6 +184,7 @@ namespace frmDashboardAdmin
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(269, 27);
             this.txtNombre.TabIndex = 2;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // tableLayoutPanel3
             // 

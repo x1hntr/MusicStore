@@ -53,8 +53,14 @@ namespace frmDashboardAdmin
             }
             if (editar == true)
             {
-
-                
+                us.editarUsuario(Int32.Parse(id), txtNombre.Text, txtApellido.Text, txtUsername.Text, administrador, txtPassword.Text);
+                MessageBox.Show("Se ha insertado un nuevo usuario corretamente");
+                txtNombre.Text = "";
+                txtApellido.Text = "";
+                txtUsername.Text = "";
+                txtPassword.Text = "";
+                UsuarioCPN us1 = new UsuarioCPN();
+                dgvUsuario.DataSource = us1.MostrarUsuarios();
 
             }
         }
@@ -66,8 +72,8 @@ namespace frmDashboardAdmin
                 id = dgvUsuario.CurrentRow.Cells["idUsuario"].Value.ToString();
                 us.eliminarUsuario(id);
                 MessageBox.Show("eliminado correctamente");
-                AlbumCPN al1 = new AlbumCPN();
-                dgvUsuario.DataSource = al1.MostrarAlbum();
+                UsuarioCPN us1 = new UsuarioCPN();
+                dgvUsuario.DataSource = us1.MostrarUsuarios();
 
             }
             else
@@ -91,6 +97,36 @@ namespace frmDashboardAdmin
             }
             else
                 MessageBox.Show("Seleccione una fila para editar");
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && e.KeyChar != ' ')
+            {
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtApellido_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && e.KeyChar != ' ')
+            {
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && !(char.IsDigit(e.KeyChar)))
+            {
+                e.Handled = true;
+                return;
+            }
         }
     }
 }

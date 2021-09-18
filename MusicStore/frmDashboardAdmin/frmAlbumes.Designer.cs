@@ -242,7 +242,8 @@ namespace frmDashboardAdmin
             this.txtPrecio.Location = new System.Drawing.Point(174, 106);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(269, 27);
-            this.txtPrecio.TabIndex = 8;
+            this.txtPrecio.TabIndex = 3;
+            this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecio_KeyPress);
             // 
             // mtbFecha
             // 
@@ -255,7 +256,7 @@ namespace frmDashboardAdmin
             this.mtbFecha.Mask = "00/00/0000";
             this.mtbFecha.Name = "mtbFecha";
             this.mtbFecha.Size = new System.Drawing.Size(269, 23);
-            this.mtbFecha.TabIndex = 7;
+            this.mtbFecha.TabIndex = 2;
             this.mtbFecha.ValidatingType = typeof(System.DateTime);
             // 
             // txtPortada
@@ -281,6 +282,7 @@ namespace frmDashboardAdmin
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(269, 27);
             this.txtStock.TabIndex = 5;
+            this.txtStock.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtStock_KeyPress);
             // 
             // txtIdArtista
             // 
@@ -293,6 +295,7 @@ namespace frmDashboardAdmin
             this.txtIdArtista.Name = "txtIdArtista";
             this.txtIdArtista.Size = new System.Drawing.Size(269, 27);
             this.txtIdArtista.TabIndex = 4;
+            this.txtIdArtista.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdArtista_KeyPress);
             // 
             // txtGenero
             // 
@@ -305,6 +308,7 @@ namespace frmDashboardAdmin
             this.txtGenero.Name = "txtGenero";
             this.txtGenero.Size = new System.Drawing.Size(269, 27);
             this.txtGenero.TabIndex = 1;
+            this.txtGenero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGenero_KeyPress);
             // 
             // txtNombre
             // 
@@ -333,7 +337,7 @@ namespace frmDashboardAdmin
             this.btnCreate.Location = new System.Drawing.Point(201, 3);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(75, 28);
-            this.btnCreate.TabIndex = 0;
+            this.btnCreate.TabIndex = 7;
             this.btnCreate.Text = "GUARDAR";
             this.btnCreate.UseVisualStyleBackColor = true;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click_1);
@@ -400,7 +404,7 @@ namespace frmDashboardAdmin
             this.btnEditar.Location = new System.Drawing.Point(191, 3);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(75, 22);
-            this.btnEditar.TabIndex = 0;
+            this.btnEditar.TabIndex = 9;
             this.btnEditar.Text = "EDITAR";
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
@@ -412,7 +416,7 @@ namespace frmDashboardAdmin
             this.btnEliminar.Location = new System.Drawing.Point(272, 3);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 22);
-            this.btnEliminar.TabIndex = 1;
+            this.btnEliminar.TabIndex = 10;
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -430,7 +434,7 @@ namespace frmDashboardAdmin
             this.btnRead.Location = new System.Drawing.Point(3, 5);
             this.btnRead.Name = "btnRead";
             this.btnRead.Size = new System.Drawing.Size(52, 23);
-            this.btnRead.TabIndex = 0;
+            this.btnRead.TabIndex = 8;
             this.btnRead.Text = "Refresh";
             this.btnRead.UseVisualStyleBackColor = true;
             this.btnRead.Click += new System.EventHandler(this.btnRead_Click);

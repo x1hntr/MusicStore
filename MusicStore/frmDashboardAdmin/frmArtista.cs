@@ -45,5 +45,25 @@ namespace frmDashboardAdmin
 
             }
         }
+
+        
+            private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+            {
+                if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && e.KeyChar != ' ')
+                {
+                    e.Handled = true;
+                    return;
+                }
+            }
+
+        private void txtNacionalidad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                
+                e.Handled = true;
+                return;
+            }
+        }
     }
 }

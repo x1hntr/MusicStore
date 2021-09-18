@@ -32,7 +32,7 @@ namespace AccesoDatos
         {
 
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "insertarAlbum ";
+            comando.CommandText = "insertarAlbum";
             comando.CommandType = CommandType.StoredProcedure;
             comando.Parameters.AddWithValue("@stock", stock);
             comando.Parameters.AddWithValue("@nombre", nombre);
@@ -52,7 +52,7 @@ namespace AccesoDatos
         {
 
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "editarAlbummm ";
+            comando.CommandText = "editarAlbummm";
             comando.CommandType = CommandType.StoredProcedure;
             comando.Parameters.AddWithValue("@id", id);
             comando.Parameters.AddWithValue("@nombre", nombre);

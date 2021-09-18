@@ -212,6 +212,7 @@ namespace frmDashboardAdmin
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(269, 27);
             this.txtUsername.TabIndex = 3;
+            this.txtUsername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsername_KeyPress);
             // 
             // txtApellido
             // 
@@ -223,6 +224,7 @@ namespace frmDashboardAdmin
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(269, 27);
             this.txtApellido.TabIndex = 2;
+            this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellido_KeyPress);
             // 
             // txtNombre
             // 
@@ -234,6 +236,7 @@ namespace frmDashboardAdmin
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(269, 27);
             this.txtNombre.TabIndex = 1;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // panel2
             // 

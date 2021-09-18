@@ -33,7 +33,6 @@ namespace AccesoDatos
        
         public void insertarUsuario(string nombre, string apellido, string username, int administrador, string contrasenia )
         {
-
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "insertarUsuario";
             comando.CommandType = CommandType.StoredProcedure;
