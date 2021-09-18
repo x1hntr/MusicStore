@@ -334,7 +334,7 @@ namespace frmDashboardAdmin
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(75, 28);
             this.btnCreate.TabIndex = 0;
-            this.btnCreate.Text = "CREAR";
+            this.btnCreate.Text = "GUARDAR";
             this.btnCreate.UseVisualStyleBackColor = true;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click_1);
             // 

@@ -68,7 +68,7 @@ namespace frmDashboardAdmin
         {
             if (editar == false)
             {
-                al.insertarAlbum(Int32.Parse(txtStock.Text), txtNombre.Text, txtGenero.Text, Convert.ToDateTime(mtbFecha.Text), txtPortada.Text, Int32.Parse(txtPrecio.Text), Int32.Parse(txtIdArtista.Text));
+                al.insertarAlbum(Int32.Parse(txtStock.Text), txtNombre.Text, txtGenero.Text, Convert.ToDateTime(mtbFecha.Text), txtPortada.Text, Convert.ToDecimal(txtPrecio.Text), Int32.Parse(txtIdArtista.Text));
                 MessageBox.Show("Se ha insertado un nuevo álbum corretamente");
                 txtStock.Text = "";
                 txtNombre.Text = "";
@@ -83,20 +83,21 @@ namespace frmDashboardAdmin
             }
             if (editar == true)
             {
-                
-                al.editarAlbum(id, Convert.ToInt32(txtStock.Text), txtNombre.Text, txtGenero.Text, Convert.ToDateTime(mtbFecha.Text), txtPortada.Text, Convert.ToInt32(txtPrecio.Text), Int32.Parse(txtIdArtista.Text));
-                MessageBox.Show("Se ha modificado el álbum corretamente");
-                txtStock.Text = "";
-                txtNombre.Text = "";
-                txtGenero.Text = "";
-                mtbFecha.Text = "";
-                txtPortada.Text = "";
-                txtPrecio.Text = "";
-                txtIdArtista.Text = "";
-                AlbumCPN al1 = new AlbumCPN();
-                dataGridView1.DataSource = al1.MostrarAlbum();
+ 
+                    al.editarAlbum(id, txtNombre.Text, txtGenero.Text, Int32.Parse(txtStock.Text), Convert.ToDateTime(mtbFecha.Text), Int32.Parse(txtIdArtista.Text), decimal.Parse(txtPrecio.Text), txtPortada.Text);
+                    MessageBox.Show("Se ha modificado el álbum corretamente");
+                    txtStock.Text = "";
+                    txtNombre.Text = "";
+                    txtGenero.Text = "";
+                    mtbFecha.Text = "";
+                    txtPortada.Text = "";
+                    txtPrecio.Text = "";
+                    txtIdArtista.Text = "";
+                    AlbumCPN al1 = new AlbumCPN();
+                    dataGridView1.DataSource = al1.MostrarAlbum();
 
+                
             }
         }
-    }
+        }
 }

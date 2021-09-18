@@ -47,24 +47,27 @@ namespace AccesoDatos
             conexion.CerrarConexion();
 
         }
-        public void editarAlbum(int id, int stock, string nombre, string genero, DateTime fechaLanzamiento, string portada, decimal precio, int id_Artista)
+
+        public void editarAlbum(int id, string nombre, string genero, int stock, DateTime fechaLanzamiento, int id_Artista, decimal precio, string portada)
         {
 
+
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "editarAlbum ";
+            comando.CommandText = "editarAlbummm ";
             comando.CommandType = CommandType.StoredProcedure;
             comando.Parameters.AddWithValue("@id", id);
-            comando.Parameters.AddWithValue("@stock", stock);
             comando.Parameters.AddWithValue("@nombre", nombre);
             comando.Parameters.AddWithValue("@genero", genero);
+            comando.Parameters.AddWithValue("@stock", stock);
             comando.Parameters.AddWithValue("@fechaLanzamiento", fechaLanzamiento);
-            comando.Parameters.AddWithValue("@portada", portada);
-            comando.Parameters.AddWithValue("@precio", precio);
             comando.Parameters.AddWithValue("@id_Artista", id_Artista);
+            comando.Parameters.AddWithValue("@precio", precio);
+            comando.Parameters.AddWithValue("@portada", portada);
+
+
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
             conexion.CerrarConexion();
-
         }
         public void eliminarAlbum(int id)
         {
@@ -77,6 +80,6 @@ namespace AccesoDatos
             comando.Parameters.Clear();
             conexion.CerrarConexion();
         }
-    
+
     }
 }

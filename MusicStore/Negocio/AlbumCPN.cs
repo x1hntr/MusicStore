@@ -20,17 +20,18 @@ namespace Negocio
 
         public void insertarAlbum(int stock, string nombre, string genero, DateTime fechaLanzamiento, string portada, decimal precio, int id_Artista)
         {
-            al.insertarAlbum(stock, nombre, genero, fechaLanzamiento,  portada,precio,  id_Artista);
+            al.insertarAlbum(stock, nombre, genero, fechaLanzamiento, portada, precio, id_Artista);
 
         }
-        public void editarAlbum(string id,int stock, string nombre, string genero, DateTime fechaLanzamiento, string portada, decimal precio, int id_Artista)
+        public void editarAlbum(string id, string nombre, string genero, int stock, DateTime fechaLanzamiento, int id_Artista, decimal precio, string portada)
         {
-            al.editarAlbum(Int32.Parse(id), stock, nombre, genero, fechaLanzamiento, portada, precio, id_Artista);
+            al.editarAlbum(Convert.ToInt32(id), nombre, genero, stock, fechaLanzamiento, id_Artista, precio, portada);
+
 
         }
         public void eliminarAlbum(string id)
         {
-            
+
             al.eliminarAlbum(Convert.ToInt32(id));
         }
     }

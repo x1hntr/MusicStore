@@ -57,5 +57,20 @@ namespace frmDashboardAdmin
 
             }
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (dgvUsuario.SelectedRows.Count > 0)
+            {
+                id = dgvUsuario.CurrentRow.Cells["idUsuario"].Value.ToString();
+                us.eliminarUsuario(Int32.Parse(id));
+                MessageBox.Show("eliminado correctamente");
+                AlbumCPN al1 = new AlbumCPN();
+                dgvUsuario.DataSource = al1.MostrarAlbum();
+
+            }
+            else
+                MessageBox.Show("Seleccione una fila para eliminar");
+        }
     }
 }
