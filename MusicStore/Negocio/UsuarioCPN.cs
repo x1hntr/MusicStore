@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AccesoDatos;
 using System.Data;
+using Entidades;
 
 namespace Negocio
 {
@@ -20,18 +21,32 @@ namespace Negocio
 
         public void insertarUsuario(string nombre, string apellido, string username, int administrador, string contrasenia)
         {
-            user.insertarUsuario(nombre, apellido, username,  administrador, contrasenia);
-  
+            user.insertarUsuario(nombre, apellido, username, administrador, contrasenia);
+
         }
         public void editarUsuario(int id, string nombre, string apellido, string username, int administrador, string contrasenia)
         {
             user.editarUsuario(id, nombre, apellido, username, administrador, contrasenia);
         }
-        public void eliminarUsuario(string id)
+        public void eliminarUsuario(int id)
         {
-            user.eliminarUsuario(int.Parse(id));
+            user.eliminarUsuario(id);
         }
+        public List<EUsuario> ListaUsuario()
+        {
+            UsuarioCPN ar = new UsuarioCPN();
+            DataTable tab = ar.MostrarUsuarios();
+            List<EUsuario> listaUsuario = new List<EUsuario>();
+            foreach (DataRow d in tab.Rows)
+            {
+                EUsuario usuario = new EUsuario(int.Parse(d["idUsuario"].ToString()), d["nombre"].ToString(),
+                    d["apellido"].ToString(), d["userName"].ToString(), d["contrasenia"].ToString(),
+                    int.Parse(d["administrador"].ToString()));
+                listaUsuario.Add(usuario);
 
+            }
+            return listaUsuario;
+        }
 
     }
 }

@@ -71,7 +71,7 @@ namespace frmDashboardAdmin
             if (dgvUsuario.SelectedRows.Count > 0)
             {
                 id = dgvUsuario.CurrentRow.Cells["idUsuario"].Value.ToString();
-                us.eliminarUsuario(id);
+                us.eliminarUsuario(int.Parse((id)));
                 MessageBox.Show("eliminado correctamente");
                 UsuarioCPN us1 = new UsuarioCPN();
                 dgvUsuario.DataSource = us1.MostrarUsuarios();

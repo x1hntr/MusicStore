@@ -16,6 +16,7 @@ namespace frmDashboardAdmin
         ArtistaCPN ar = new ArtistaCPN();
         private string id = null;
         bool editar = false;
+
         public frmArtista()
         {
             InitializeComponent();
@@ -37,7 +38,7 @@ namespace frmDashboardAdmin
                 }
                 if (editar == true)
                 {
-                    ar.editarArtista(id, txtNombre.Text, txtNacionalidad.Text);
+                    ar.editarArtista(int.Parse(id), txtNombre.Text, txtNacionalidad.Text);
                     MessageBox.Show("Se ha modificado el artista corretamente");
                     txtNacionalidad.Text = "";
                     txtNombre.Text = "";
@@ -75,7 +76,7 @@ namespace frmDashboardAdmin
             if (dgvArtista.SelectedRows.Count > 0)
             {
                 id = dgvArtista.CurrentRow.Cells["idArtista"].Value.ToString();
-                ar.eliminarArtista(id);
+                ar.eliminarArtista(int.Parse(id));
                 MessageBox.Show("Eliminado correctamente");
                 ArtistaCPN al1 = new ArtistaCPN();
                dgvArtista.DataSource = al1.MostrarArtista();

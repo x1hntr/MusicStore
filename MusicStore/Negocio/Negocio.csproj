@@ -34,6 +34,10 @@
     <Reference Include="AccesoDatos">
       <HintPath>..\AccesoDatos\bin\Debug\AccesoDatos.dll</HintPath>
     </Reference>
+    <Reference Include="Entidades, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Entidades.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

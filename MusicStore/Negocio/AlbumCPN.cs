@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AccesoDatos;
 using System.Data;
+using Entidades;
 
 namespace Negocio
 {
@@ -29,9 +30,27 @@ namespace Negocio
 
 
         }
-        public void eliminarAlbum(int id)
+        public void eliminarAlbum(string id)
         {
-            al.eliminarAlbum(id);
+
+            al.eliminarAlbum(Convert.ToInt32(id));
+        }
+        public List<EAlbum> ListaAlbum()
+        {
+            AlbumCPN al = new AlbumCPN();
+            DataTable tab = al.MostrarAlbum();
+            List<EAlbum> listaAlbum = new List<EAlbum>();
+            foreach (DataRow d in tab.Rows)
+            {
+                EAlbum album = new EAlbum(int.Parse(d["idAlbum"].ToString()), int.Parse(d["stock"].ToString()), d["nombre"].ToString(),
+                    d["genero"].ToString(), Convert.ToDateTime(d["fechaLanzamiento"].ToString()), d["portada"].ToString(),
+               Convert.ToDecimal(d["precio"].ToString()), int.Parse(d["id_Artista"].ToString()));
+                listaAlbum.Add(album);
+
+            }
+            return listaAlbum;
         }
     }
+
 }
+

@@ -49,7 +49,7 @@ namespace frmDashboardAdmin
             if (dgvAlbum.SelectedRows.Count > 0)
             {
                 id = dgvAlbum.CurrentRow.Cells["idAlbum"].Value.ToString();
-                al.eliminarAlbum(Int32.Parse(id));
+                al.eliminarAlbum(id);
                 MessageBox.Show("eliminado correctamente");
                 AlbumCPN al1 = new AlbumCPN();
                 dgvAlbum.DataSource = al1.MostrarAlbum();

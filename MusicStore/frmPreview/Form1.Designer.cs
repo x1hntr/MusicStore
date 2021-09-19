@@ -53,9 +53,9 @@ namespace frmPreview
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lstArtistas = new System.Windows.Forms.ListBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.cmbCanciones = new System.Windows.Forms.ComboBox();
-            this.btnAgregar = new System.Windows.Forms.Button();
             this.cmbAlbumes = new System.Windows.Forms.ComboBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.cmbCanciones = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.wmPlayer)).BeginInit();
@@ -344,13 +344,13 @@ namespace frmPreview
             this.panel5.Size = new System.Drawing.Size(257, 330);
             this.panel5.TabIndex = 3;
             // 
-            // cmbCanciones
+            // cmbAlbumes
             // 
-            this.cmbCanciones.FormattingEnabled = true;
-            this.cmbCanciones.Location = new System.Drawing.Point(41, 54);
-            this.cmbCanciones.Name = "cmbCanciones";
-            this.cmbCanciones.Size = new System.Drawing.Size(121, 21);
-            this.cmbCanciones.TabIndex = 0;
+            this.cmbAlbumes.FormattingEnabled = true;
+            this.cmbAlbumes.Location = new System.Drawing.Point(41, 124);
+            this.cmbAlbumes.Name = "cmbAlbumes";
+            this.cmbAlbumes.Size = new System.Drawing.Size(121, 21);
+            this.cmbAlbumes.TabIndex = 2;
             // 
             // btnAgregar
             // 
@@ -362,13 +362,13 @@ namespace frmPreview
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // cmbAlbumes
+            // cmbCanciones
             // 
-            this.cmbAlbumes.FormattingEnabled = true;
-            this.cmbAlbumes.Location = new System.Drawing.Point(41, 124);
-            this.cmbAlbumes.Name = "cmbAlbumes";
-            this.cmbAlbumes.Size = new System.Drawing.Size(121, 21);
-            this.cmbAlbumes.TabIndex = 2;
+            this.cmbCanciones.FormattingEnabled = true;
+            this.cmbCanciones.Location = new System.Drawing.Point(41, 54);
+            this.cmbCanciones.Name = "cmbCanciones";
+            this.cmbCanciones.Size = new System.Drawing.Size(121, 21);
+            this.cmbCanciones.TabIndex = 0;
             // 
             // Form1
             // 

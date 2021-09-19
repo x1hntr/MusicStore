@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AccesoDatos;
 using System.Data;
+using Entidades;
 
 namespace Negocio
 {
@@ -31,6 +32,20 @@ namespace Negocio
         public void eliminarFactura(int id)
         {
             fac.eliminarFactura(id);
+        }
+        public List<EFactura> ListaFactura()
+        {
+            FacturaCPN ar = new FacturaCPN();
+            DataTable tab = ar.MostrarFactura();
+            List<EFactura> listaFactura = new List<EFactura>();
+            foreach (DataRow d in tab.Rows)
+            {
+                EFactura factura = new EFactura(int.Parse(d["idUsuario"].ToString()), int.Parse(d["id_Album"].ToString()),
+                    Convert.ToDateTime(d["fechaCompra"].ToString()), Convert.ToDecimal(d["total"].ToString()));
+                listaFactura.Add(factura);
+
+            }
+            return listaFactura;
         }
     }
 }
