@@ -54,6 +54,8 @@ namespace frmPreview
             this.lstArtistas = new System.Windows.Forms.ListBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.cmbCanciones = new System.Windows.Forms.ComboBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.cmbAlbumes = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.wmPlayer)).BeginInit();
@@ -333,6 +335,8 @@ namespace frmPreview
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.cmbAlbumes);
+            this.panel5.Controls.Add(this.btnAgregar);
             this.panel5.Controls.Add(this.cmbCanciones);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(265, 3);
@@ -347,6 +351,24 @@ namespace frmPreview
             this.cmbCanciones.Name = "cmbCanciones";
             this.cmbCanciones.Size = new System.Drawing.Size(121, 21);
             this.cmbCanciones.TabIndex = 0;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(41, 202);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.TabIndex = 1;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // cmbAlbumes
+            // 
+            this.cmbAlbumes.FormattingEnabled = true;
+            this.cmbAlbumes.Location = new System.Drawing.Point(41, 124);
+            this.cmbAlbumes.Name = "cmbAlbumes";
+            this.cmbAlbumes.Size = new System.Drawing.Size(121, 21);
+            this.cmbAlbumes.TabIndex = 2;
             // 
             // Form1
             // 
@@ -398,7 +420,9 @@ namespace frmPreview
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.ListBox lstArtistas;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.ComboBox cmbCanciones;
+        private System.Windows.Forms.ComboBox cmbAlbumes;
     }
 }
 

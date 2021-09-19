@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Negocio;
+using Entidades;
+using System.Collections;
 
 namespace frmPreview
 {
@@ -15,6 +18,11 @@ namespace frmPreview
         bool Play = false;
         string[] ArchivosMP3;
         string[] rutasArchivosMP3;
+
+      
+
+        AlbumCPN al = new AlbumCPN();
+        CancionCPN ca = new CancionCPN();
 
         public Form1()
         {
@@ -40,10 +48,6 @@ namespace frmPreview
                 wmPlayer.URL = rutasArchivosMP3[0];
             }
         }
-
-      
-    
-
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
@@ -105,6 +109,11 @@ namespace frmPreview
             btnPlay.Image = Properties.Resources.pausa;
             lbltitulo.Text = ArchivosMP3[lstArtistas.SelectedIndex];
             cmbCanciones.Items.Add(ArchivosMP3[lstArtistas.SelectedIndex]);
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

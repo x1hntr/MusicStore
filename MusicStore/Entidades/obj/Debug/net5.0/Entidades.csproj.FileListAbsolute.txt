@@ -1,0 +1,17 @@
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Entidades\obj\Debug\net5.0\Entidades.csprojAssemblyReference.cache
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Entidades\obj\Debug\net5.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Entidades\obj\Debug\net5.0\Entidades.AssemblyInfoInputs.cache
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Entidades\obj\Debug\net5.0\Entidades.AssemblyInfo.cs
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Entidades\obj\Debug\net5.0\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Entidades\bin\Debug\net5.0\Entidades.deps.json
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Entidades\bin\Debug\net5.0\Entidades.dll
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Entidades\bin\Debug\net5.0\ref\Entidades.dll
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Entidades\bin\Debug\net5.0\Entidades.pdb
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Entidades\bin\Debug\net5.0\AccesoDatos.dll
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Entidades\bin\Debug\net5.0\AccesoDatos.pdb
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Entidades\obj\Debug\net5.0\Entidades.csproj.CopyComplete
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Entidades\obj\Debug\net5.0\Entidades.dll
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Entidades\obj\Debug\net5.0\ref\Entidades.dll
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Entidades\obj\Debug\net5.0\Entidades.pdb
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Entidades\bin\Debug\net5.0\Negocio.dll
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Entidades\bin\Debug\net5.0\Negocio.pdb
