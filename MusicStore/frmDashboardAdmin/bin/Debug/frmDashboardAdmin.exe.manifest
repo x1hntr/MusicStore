@@ -66,14 +66,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="frmDashboardAdmin.exe" size="126432">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="frmDashboardAdmin.exe" size="127456">
       <assemblyIdentity name="frmDashboardAdmin" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2Qpcb6oh5FJG97OfuWaiPfK7PEQXRENLxUyZ+lpOnfw=</dsig:DigestValue>
+        <dsig:DigestValue>dfgL9zcnxrrMNo1qdH0KodxMn6MhEwgIQbHL5Tga40A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

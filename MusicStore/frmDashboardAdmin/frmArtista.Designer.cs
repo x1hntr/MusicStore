@@ -29,6 +29,7 @@ namespace frmDashboardAdmin
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
@@ -40,8 +41,6 @@ namespace frmDashboardAdmin
             this.txtNacionalidad = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnRead = new System.Windows.Forms.Button();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvArtista = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
@@ -53,7 +52,6 @@ namespace frmDashboardAdmin
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArtista)).BeginInit();
             this.tableLayoutPanel6.SuspendLayout();
@@ -99,8 +97,8 @@ namespace frmDashboardAdmin
             this.tableLayoutPanel4.Location = new System.Drawing.Point(106, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 61.58192F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38.41808F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65.53672F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34.46328F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(475, 177);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
@@ -108,9 +106,9 @@ namespace frmDashboardAdmin
             // 
             this.panel1.Controls.Add(this.btnGuardar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 111);
+            this.panel1.Location = new System.Drawing.Point(3, 118);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(469, 63);
+            this.panel1.Size = new System.Drawing.Size(469, 56);
             this.panel1.TabIndex = 0;
             // 
             // btnGuardar
@@ -118,7 +116,7 @@ namespace frmDashboardAdmin
             this.btnGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btnGuardar.Location = new System.Drawing.Point(203, 12);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 38);
+            this.btnGuardar.Size = new System.Drawing.Size(75, 31);
             this.btnGuardar.TabIndex = 0;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -133,7 +131,7 @@ namespace frmDashboardAdmin
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(469, 102);
+            this.panel2.Size = new System.Drawing.Size(469, 109);
             this.panel2.TabIndex = 1;
             // 
             // label2
@@ -143,7 +141,7 @@ namespace frmDashboardAdmin
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label2.ForeColor = System.Drawing.Color.LightGray;
-            this.label2.Location = new System.Drawing.Point(34, 61);
+            this.label2.Location = new System.Drawing.Point(34, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(116, 21);
             this.label2.TabIndex = 12;
@@ -156,7 +154,7 @@ namespace frmDashboardAdmin
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label1.ForeColor = System.Drawing.Color.LightGray;
-            this.label1.Location = new System.Drawing.Point(34, 28);
+            this.label1.Location = new System.Drawing.Point(34, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(129, 21);
             this.label1.TabIndex = 11;
@@ -168,7 +166,8 @@ namespace frmDashboardAdmin
             this.txtNacionalidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
             this.txtNacionalidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNacionalidad.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNacionalidad.Location = new System.Drawing.Point(180, 55);
+            this.txtNacionalidad.ForeColor = System.Drawing.Color.LightGray;
+            this.txtNacionalidad.Location = new System.Drawing.Point(180, 58);
             this.txtNacionalidad.Name = "txtNacionalidad";
             this.txtNacionalidad.Size = new System.Drawing.Size(269, 27);
             this.txtNacionalidad.TabIndex = 3;
@@ -180,7 +179,8 @@ namespace frmDashboardAdmin
             this.txtNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(180, 22);
+            this.txtNombre.ForeColor = System.Drawing.Color.LightGray;
+            this.txtNombre.Location = new System.Drawing.Point(180, 25);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(269, 27);
             this.txtNombre.TabIndex = 2;
@@ -189,10 +189,9 @@ namespace frmDashboardAdmin
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 3;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel3.Controls.Add(this.panel4, 0, 0);
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel5, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 192);
@@ -202,24 +201,6 @@ namespace frmDashboardAdmin
             this.tableLayoutPanel3.Size = new System.Drawing.Size(688, 285);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btnRead);
-            this.panel4.Location = new System.Drawing.Point(3, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(58, 29);
-            this.panel4.TabIndex = 2;
-            // 
-            // btnRead
-            // 
-            this.btnRead.Location = new System.Drawing.Point(3, 5);
-            this.btnRead.Name = "btnRead";
-            this.btnRead.Size = new System.Drawing.Size(52, 23);
-            this.btnRead.TabIndex = 0;
-            this.btnRead.Text = "Refresh";
-            this.btnRead.UseVisualStyleBackColor = true;
-          
-            // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 1;
@@ -227,21 +208,38 @@ namespace frmDashboardAdmin
             this.tableLayoutPanel5.Controls.Add(this.dgvArtista, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel6, 0, 1);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(71, 3);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(140, 3);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.75F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.25F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(544, 279);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(406, 279);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // dgvArtista
             // 
+            this.dgvArtista.AllowUserToAddRows = false;
+            this.dgvArtista.AllowUserToDeleteRows = false;
+            this.dgvArtista.AllowUserToResizeColumns = false;
+            this.dgvArtista.AllowUserToResizeRows = false;
+            this.dgvArtista.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvArtista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvArtista.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
+            this.dgvArtista.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvArtista.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvArtista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvArtista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvArtista.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvArtista.Location = new System.Drawing.Point(3, 3);
             this.dgvArtista.Name = "dgvArtista";
-            this.dgvArtista.Size = new System.Drawing.Size(538, 227);
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvArtista.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvArtista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvArtista.Size = new System.Drawing.Size(400, 227);
             this.dgvArtista.TabIndex = 0;
             // 
             // tableLayoutPanel6
@@ -256,14 +254,14 @@ namespace frmDashboardAdmin
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(538, 40);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(400, 40);
             this.tableLayoutPanel6.TabIndex = 1;
             // 
             // btnEditar
             // 
             this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEditar.Location = new System.Drawing.Point(191, 3);
+            this.btnEditar.Location = new System.Drawing.Point(122, 3);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(75, 34);
             this.btnEditar.TabIndex = 0;
@@ -275,7 +273,7 @@ namespace frmDashboardAdmin
             // 
             this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnEliminar.Location = new System.Drawing.Point(272, 3);
+            this.btnEliminar.Location = new System.Drawing.Point(203, 3);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 34);
             this.btnEliminar.TabIndex = 1;
@@ -301,7 +299,6 @@ namespace frmDashboardAdmin
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvArtista)).EndInit();
             this.tableLayoutPanel6.ResumeLayout(false);
@@ -327,7 +324,5 @@ namespace frmDashboardAdmin
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button btnRead;
     }
 }

@@ -17,6 +17,7 @@ namespace frmDashboardAdmin
         public Form1()
         {
             InitializeComponent();
+            txtZona.Text = "Resumen";
             abrirFormularioHijo(new frmResumen());
         }
        
@@ -50,12 +51,16 @@ namespace frmDashboardAdmin
 
         private void btnInfo_Click(object sender, EventArgs e)
         {
+            txtZona.Text = "Información";
             abrirFormularioHijo(new frmInformacion());
+            
         }
 
         private void btnResumen_Click(object sender, EventArgs e)
         {
+            txtZona.Text = "Resumen";
             abrirFormularioHijo(new frmResumen());
+           
         }
 
         private void btnVentas_Click(object sender, EventArgs e)
@@ -68,23 +73,30 @@ namespace frmDashboardAdmin
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
+            txtZona.Text = "Usuarios";
             abrirFormularioHijo(new frmUsuario());
 
         }
 
         private void btnAlbumes_Click(object sender, EventArgs e)
         {
+            txtZona.Text = "Álbumes";
             abrirFormularioHijo(new frmAlbumes());
+            
         }
 
         private void btnArtista_Click(object sender, EventArgs e)
         {
+            txtZona.Text = "Artistas";
             abrirFormularioHijo(new frmArtista());
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            txtZona.Text = "Canciones";
             abrirFormularioHijo(new frmCanciones());
+            
         }
     }
 }

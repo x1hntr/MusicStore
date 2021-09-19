@@ -25,42 +25,47 @@ namespace frmDashboardAdmin
            
         }
 
-      
+
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (chkAdministrador.Checked)
+            if (txtNombre.Text != "" && txtApellido.Text != "" && txtUsername.Text != "" && txtPassword.Text != "")
             {
-                administrador = 1;
+                if (chkAdministrador.Checked)
+                {
+                    administrador = 1;
+                }
+                else
+                    administrador = 0;
+                if (editar == false)
+                {
+                    us.insertarUsuario(txtNombre.Text, txtApellido.Text, txtUsername.Text, administrador, txtPassword.Text);
+                    MessageBox.Show("Se ha insertado un nuevo usuario corretamente");
+                    txtNombre.Text = "";
+                    txtApellido.Text = "";
+                    txtUsername.Text = "";
+                    txtPassword.Text = "";
+                    UsuarioCPN us1 = new UsuarioCPN();
+                    dgvUsuario.DataSource = us1.MostrarUsuarios();
+
+                }
+                if (editar == true)
+                {
+                    us.editarUsuario(int.Parse(id), txtNombre.Text, txtApellido.Text, txtUsername.Text, administrador, txtPassword.Text);
+                    MessageBox.Show("Se ha insertado un nuevo usuario corretamente");
+                    txtNombre.Text = "";
+                    txtApellido.Text = "";
+                    txtUsername.Text = "";
+                    txtPassword.Text = "";
+                    UsuarioCPN us1 = new UsuarioCPN();
+                    dgvUsuario.DataSource = us1.MostrarUsuarios();
+
+                }
             }
             else
-                administrador = 0;
-            if (editar == false)
-            {
-                us.insertarUsuario(txtNombre.Text, txtApellido.Text, txtUsername.Text, administrador, txtPassword.Text);
-                MessageBox.Show("Se ha insertado un nuevo usuario corretamente");
-                txtNombre.Text = "";
-                txtApellido.Text = "";
-                txtUsername.Text = "";
-                txtPassword.Text = "";
-                UsuarioCPN us1 = new UsuarioCPN();
-                dgvUsuario.DataSource = us1.MostrarUsuarios();
-
-            }
-            if (editar == true)
-            {
-                us.editarUsuario(int.Parse(id), txtNombre.Text, txtApellido.Text, txtUsername.Text, administrador, txtPassword.Text);
-                MessageBox.Show("Se ha insertado un nuevo usuario corretamente");
-                txtNombre.Text = "";
-                txtApellido.Text = "";
-                txtUsername.Text = "";
-                txtPassword.Text = "";
-                UsuarioCPN us1 = new UsuarioCPN();
-                dgvUsuario.DataSource = us1.MostrarUsuarios();
-
-            }
+                MessageBox.Show("Llene todos los campos para continuar", "Alert");
         }
-
+            
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             if (dgvUsuario.SelectedRows.Count > 0)

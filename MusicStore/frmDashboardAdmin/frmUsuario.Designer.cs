@@ -45,8 +45,6 @@ namespace frmDashboardAdmin
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnRead = new System.Windows.Forms.Button();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -58,7 +56,6 @@ namespace frmDashboardAdmin
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).BeginInit();
@@ -201,6 +198,7 @@ namespace frmDashboardAdmin
             this.txtPassword.ForeColor = System.Drawing.Color.LightGray;
             this.txtPassword.Location = new System.Drawing.Point(156, 116);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(269, 27);
             this.txtPassword.TabIndex = 4;
             // 
@@ -266,10 +264,9 @@ namespace frmDashboardAdmin
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 3;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel3.Controls.Add(this.panel4, 0, 0);
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel5, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 258);
@@ -279,23 +276,6 @@ namespace frmDashboardAdmin
             this.tableLayoutPanel3.Size = new System.Drawing.Size(688, 219);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btnRead);
-            this.panel4.Location = new System.Drawing.Point(3, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(58, 29);
-            this.panel4.TabIndex = 3;
-            // 
-            // btnRead
-            // 
-            this.btnRead.Location = new System.Drawing.Point(3, 5);
-            this.btnRead.Name = "btnRead";
-            this.btnRead.Size = new System.Drawing.Size(52, 23);
-            this.btnRead.TabIndex = 0;
-            this.btnRead.Text = "Refresh";
-            this.btnRead.UseVisualStyleBackColor = true;
-            // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 1;
@@ -303,12 +283,12 @@ namespace frmDashboardAdmin
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel6, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.dgvUsuario, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(71, 3);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(106, 3);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.37548F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.62452F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(544, 213);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(475, 213);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // tableLayoutPanel6
@@ -352,8 +332,17 @@ namespace frmDashboardAdmin
             // 
             // dgvUsuario
             // 
+            this.dgvUsuario.AllowUserToAddRows = false;
+            this.dgvUsuario.AllowUserToDeleteRows = false;
+            this.dgvUsuario.AllowUserToResizeColumns = false;
+            this.dgvUsuario.AllowUserToResizeRows = false;
+            this.dgvUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvUsuario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvUsuario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
+            this.dgvUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvUsuario.Location = new System.Drawing.Point(3, 3);
             this.dgvUsuario.Name = "dgvUsuario";
             this.dgvUsuario.Size = new System.Drawing.Size(538, 169);
@@ -377,7 +366,6 @@ namespace frmDashboardAdmin
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).EndInit();
@@ -408,7 +396,5 @@ namespace frmDashboardAdmin
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button btnRead;
     }
 }
