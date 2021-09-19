@@ -13,23 +13,19 @@ namespace frmDashboardAdmin
 {
     
 
-    public partial class frmClientes : Form
+    public partial class frmUsuario : Form
     {
         UsuarioCPN us = new UsuarioCPN();
         private string id = null;
         bool editar = false;
         int administrador;
-        public frmClientes()
+        public frmUsuario()
         {
             InitializeComponent();
            
         }
 
-        private void btnRead_Click(object sender, EventArgs e)
-        {
-            UsuarioCPN us = new UsuarioCPN();
-            dgvUsuario.DataSource = us.MostrarUsuarios();
-        }
+      
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
@@ -53,7 +49,7 @@ namespace frmDashboardAdmin
             }
             if (editar == true)
             {
-                us.editarUsuario(Int32.Parse(id), txtNombre.Text, txtApellido.Text, txtUsername.Text, administrador, txtPassword.Text);
+                us.editarUsuario(int.Parse(id), txtNombre.Text, txtApellido.Text, txtUsername.Text, administrador, txtPassword.Text);
                 MessageBox.Show("Se ha insertado un nuevo usuario corretamente");
                 txtNombre.Text = "";
                 txtApellido.Text = "";
@@ -127,6 +123,12 @@ namespace frmDashboardAdmin
                 e.Handled = true;
                 return;
             }
+        }
+
+        private void frmClientes_Load(object sender, EventArgs e)
+        {
+            UsuarioCPN us = new UsuarioCPN();
+            dgvUsuario.DataSource = us.MostrarUsuarios();
         }
     }
 }

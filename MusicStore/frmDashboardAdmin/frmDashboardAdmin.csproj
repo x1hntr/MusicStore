@@ -105,11 +105,17 @@
     <Compile Include="frmArtista.Designer.cs">
       <DependentUpon>frmArtista.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmClientes.cs">
+    <Compile Include="frmCanciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmClientes.Designer.cs">
-      <DependentUpon>frmClientes.cs</DependentUpon>
+    <Compile Include="frmCanciones.Designer.cs">
+      <DependentUpon>frmCanciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuario.Designer.cs">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="frmInformacion.cs">
       <SubType>Form</SubType>
@@ -141,8 +147,11 @@
     <EmbeddedResource Include="frmArtista.resx">
       <DependentUpon>frmArtista.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmClientes.resx">
-      <DependentUpon>frmClientes.cs</DependentUpon>
+    <EmbeddedResource Include="frmCanciones.resx">
+      <DependentUpon>frmCanciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuario.resx">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInformacion.resx">
       <DependentUpon>frmInformacion.cs</DependentUpon>

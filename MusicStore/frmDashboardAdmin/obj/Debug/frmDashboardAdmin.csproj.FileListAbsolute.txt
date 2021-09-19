@@ -10,7 +10,6 @@ C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmDashboardAdmin\ob
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmDashboardAdmin\obj\Debug\frmDashboardAdmin.pdb
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmDashboardAdmin\obj\Debug\frmDashboardAdmin.frmInformacion.resources
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmDashboardAdmin\obj\Debug\frmDashboardAdmin.frmVentas.resources
-C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmDashboardAdmin\obj\Debug\frmDashboardAdmin.frmClientes.resources
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmDashboardAdmin\obj\Debug\frmDashboardAdmin.frmAlbumes.resources
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmDashboardAdmin\obj\Debug\frmDashboardAdmin.frmResumen.resources
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmDashboardAdmin\bin\Debug\AccesoDatos.dll
@@ -29,3 +28,5 @@ C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmDashboardAdmin\bi
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmDashboardAdmin\bin\Debug\Interop.WMPLib.dll
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmDashboardAdmin\bin\Debug\frmPreview.pdb
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmDashboardAdmin\bin\Debug\frmPreview.exe.config
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmDashboardAdmin\obj\Debug\frmDashboardAdmin.frmUsuario.resources
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmDashboardAdmin\obj\Debug\frmDashboardAdmin.frmCanciones.resources

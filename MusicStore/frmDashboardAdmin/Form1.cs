@@ -68,7 +68,7 @@ namespace frmDashboardAdmin
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            abrirFormularioHijo(new frmClientes());
+            abrirFormularioHijo(new frmUsuario());
 
         }
 
@@ -80,6 +80,11 @@ namespace frmDashboardAdmin
         private void btnArtista_Click(object sender, EventArgs e)
         {
             abrirFormularioHijo(new frmArtista());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new frmCanciones());
         }
     }
 }

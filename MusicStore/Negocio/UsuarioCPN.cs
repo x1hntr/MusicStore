@@ -29,7 +29,7 @@ namespace Negocio
         }
         public void eliminarUsuario(string id)
         {
-            user.eliminarUsuario(Int32.Parse(id));
+            user.eliminarUsuario(int.Parse(id));
         }
 
 
