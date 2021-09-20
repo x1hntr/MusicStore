@@ -47,6 +47,7 @@
     <Compile Include="AlbumCPN.cs" />
     <Compile Include="ArtistaCPN.cs" />
     <Compile Include="CancionCPN.cs" />
+    <Compile Include="ClienteCPN.cs" />
     <Compile Include="FacturaCPN.cs" />
     <Compile Include="ItemFacturaCPN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

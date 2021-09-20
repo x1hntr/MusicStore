@@ -51,11 +51,13 @@ namespace frmPreview
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.lstArtistas = new System.Windows.Forms.ListBox();
+            this.lbCanciones = new System.Windows.Forms.ListBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.cmbAlbumes = new System.Windows.Forms.ComboBox();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.cmbCanciones = new System.Windows.Forms.ComboBox();
+            this.lbCarrito = new System.Windows.Forms.ListBox();
+            this.btnFinalizar = new System.Windows.Forms.Button();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.wmPlayer)).BeginInit();
@@ -311,7 +313,7 @@ namespace frmPreview
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.lstArtistas, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lbCanciones, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel5, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 111);
@@ -321,23 +323,25 @@ namespace frmPreview
             this.tableLayoutPanel2.Size = new System.Drawing.Size(525, 336);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
-            // lstArtistas
+            // lbCanciones
             // 
-            this.lstArtistas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lbCanciones.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lstArtistas.FormattingEnabled = true;
-            this.lstArtistas.Location = new System.Drawing.Point(3, 3);
-            this.lstArtistas.Name = "lstArtistas";
-            this.lstArtistas.Size = new System.Drawing.Size(256, 329);
-            this.lstArtistas.TabIndex = 2;
-            this.lstArtistas.SelectedIndexChanged += new System.EventHandler(this.lstArtistas_SelectedIndexChanged);
+            this.lbCanciones.FormattingEnabled = true;
+            this.lbCanciones.Location = new System.Drawing.Point(3, 3);
+            this.lbCanciones.Name = "lbCanciones";
+            this.lbCanciones.Size = new System.Drawing.Size(256, 329);
+            this.lbCanciones.TabIndex = 2;
+            this.lbCanciones.SelectedIndexChanged += new System.EventHandler(this.lstArtistas_SelectedIndexChanged);
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.lblTotal);
+            this.panel5.Controls.Add(this.btnFinalizar);
+            this.panel5.Controls.Add(this.lbCarrito);
             this.panel5.Controls.Add(this.cmbAlbumes);
             this.panel5.Controls.Add(this.btnAgregar);
-            this.panel5.Controls.Add(this.cmbCanciones);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(265, 3);
             this.panel5.Name = "panel5";
@@ -347,14 +351,14 @@ namespace frmPreview
             // cmbAlbumes
             // 
             this.cmbAlbumes.FormattingEnabled = true;
-            this.cmbAlbumes.Location = new System.Drawing.Point(41, 124);
+            this.cmbAlbumes.Location = new System.Drawing.Point(3, 8);
             this.cmbAlbumes.Name = "cmbAlbumes";
-            this.cmbAlbumes.Size = new System.Drawing.Size(121, 21);
+            this.cmbAlbumes.Size = new System.Drawing.Size(254, 21);
             this.cmbAlbumes.TabIndex = 2;
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(41, 202);
+            this.btnAgregar.Location = new System.Drawing.Point(3, 286);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
             this.btnAgregar.TabIndex = 1;
@@ -362,13 +366,33 @@ namespace frmPreview
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // cmbCanciones
+            // lbCarrito
             // 
-            this.cmbCanciones.FormattingEnabled = true;
-            this.cmbCanciones.Location = new System.Drawing.Point(41, 54);
-            this.cmbCanciones.Name = "cmbCanciones";
-            this.cmbCanciones.Size = new System.Drawing.Size(121, 21);
-            this.cmbCanciones.TabIndex = 0;
+            this.lbCarrito.FormattingEnabled = true;
+            this.lbCarrito.Location = new System.Drawing.Point(3, 35);
+            this.lbCarrito.Name = "lbCarrito";
+            this.lbCarrito.Size = new System.Drawing.Size(251, 95);
+            this.lbCarrito.TabIndex = 3;
+            // 
+            // btnFinalizar
+            // 
+            this.btnFinalizar.Location = new System.Drawing.Point(162, 286);
+            this.btnFinalizar.Name = "btnFinalizar";
+            this.btnFinalizar.Size = new System.Drawing.Size(75, 23);
+            this.btnFinalizar.TabIndex = 4;
+            this.btnFinalizar.Text = "Finalizar";
+            this.btnFinalizar.UseVisualStyleBackColor = true;
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.ForeColor = System.Drawing.Color.LightGray;
+            this.lblTotal.Location = new System.Drawing.Point(16, 172);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(47, 17);
+            this.lblTotal.TabIndex = 5;
+            this.lblTotal.Text = "label1";
             // 
             // Form1
             // 
@@ -393,6 +417,7 @@ namespace frmPreview
             this.panel4.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -419,11 +444,13 @@ namespace frmPreview
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.ListBox lstArtistas;
+        private System.Windows.Forms.ListBox lbCanciones;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.ComboBox cmbCanciones;
         private System.Windows.Forms.ComboBox cmbAlbumes;
+        private System.Windows.Forms.Button btnFinalizar;
+        private System.Windows.Forms.ListBox lbCarrito;
+        private System.Windows.Forms.Label lblTotal;
     }
 }
 

@@ -304,5 +304,11 @@
   <ItemGroup>
     <None Include="Resources\letras-de-canciones.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Enti\Enti.csproj">
+      <Project>{5c9e1634-f5e7-4d9d-8d57-ce2e6d07b7d5}</Project>
+      <Name>Enti</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

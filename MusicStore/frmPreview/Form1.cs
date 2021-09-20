@@ -16,12 +16,12 @@ namespace frmPreview
         bool Play = false;
         string[] ArchivosMP3;
         string[] rutasArchivosMP3;
-
         private List<EAlbum> listaAlbum = new List<EAlbum>();
+        private List<EAlbum> listaAlbumtotal = new List<EAlbum>();
         private List<ECancion> listaCancion = new List<ECancion>();
-
         AlbumCPN al = new AlbumCPN();
         CancionCPN ca = new CancionCPN();
+        ClienteCPN cl = new ClienteCPN();
 
         public Form1()
         {
@@ -42,7 +42,7 @@ namespace frmPreview
                 ArchivosMP3 = CajaDeBusquedadeArchivos.SafeFileNames;
                 rutasArchivosMP3 = CajaDeBusquedadeArchivos.FileNames;
                 foreach (var ArchivoMP3 in ArchivosMP3) {
-                    lstArtistas.Items.Add(ArchivoMP3);
+                    lbCanciones.Items.Add(ArchivoMP3);
                 }
                 wmPlayer.URL = rutasArchivosMP3[0];
             }
@@ -104,15 +104,26 @@ namespace frmPreview
 
         private void lstArtistas_SelectedIndexChanged(object sender, EventArgs e)
         {
-            wmPlayer.URL = rutasArchivosMP3[lstArtistas.SelectedIndex];
+            wmPlayer.URL = rutasArchivosMP3[lbCanciones.SelectedIndex];
             btnPlay.Image = Properties.Resources.pausa;
-            lbltitulo.Text = ArchivosMP3[lstArtistas.SelectedIndex];
-            cmbCanciones.Items.Add(ArchivosMP3[lstArtistas.SelectedIndex]);
+            lbltitulo.Text = ArchivosMP3[lbCanciones.SelectedIndex];
+           // cmbAlbum.Items.Add(ArchivosMP3[lbCanciones.SelectedIndex]);
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            decimal total = 0;
+            EAlbum ca1 = cmbAlbumes.SelectedItem as EAlbum;
 
+            listaAlbumtotal.Add(ca1);
+            lbCarrito.Items.Add(ca1);
+            foreach (EAlbum al2 in listaAlbumtotal)
+            {
+                total = al2.Precio + total;
+
+
+            }
+            lblTotal.Text = total.ToString();
         }
 
         private void Form1_Load(object sender, EventArgs e)

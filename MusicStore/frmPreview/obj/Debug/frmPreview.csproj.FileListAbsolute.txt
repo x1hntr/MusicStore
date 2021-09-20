@@ -15,11 +15,10 @@ C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmPreview\bin\Debug
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmPreview\bin\Debug\AxInterop.WMPLib.dll
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmPreview\bin\Debug\MACTrackBarLib.dll
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmPreview\obj\Debug\frmPreview.csproj.CopyComplete
-C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmPreview\bin\Debug\Entidades.dll
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmPreview\bin\Debug\AccesoDatos.dll
-C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmPreview\bin\Debug\Entidades.pdb
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmPreview\bin\Debug\Negocio.pdb
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmPreview\bin\Debug\AccesoDatos.pdb
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmPreview\bin\Debug\EntidadesM.pdb
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmPreview\bin\Debug\Enti.dll
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmPreview\bin\Debug\Enti.pdb
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\frmPreview\bin\Debug\Negocio.dll

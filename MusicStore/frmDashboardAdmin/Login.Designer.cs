@@ -77,6 +77,7 @@ namespace frmDashboardAdmin
             this.txtPass.ForeColor = System.Drawing.Color.DimGray;
             this.txtPass.Location = new System.Drawing.Point(166, 231);
             this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(260, 31);
             this.txtPass.TabIndex = 2;
             // 

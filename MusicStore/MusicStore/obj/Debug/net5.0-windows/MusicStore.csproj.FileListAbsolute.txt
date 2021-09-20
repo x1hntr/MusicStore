@@ -21,7 +21,6 @@ C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\MusicStore\bin\Debug
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\MusicStore\bin\Debug\net5.0-windows\Negocio.dll
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\MusicStore\bin\Debug\net5.0-windows\frmPreview.exe
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\MusicStore\bin\Debug\net5.0-windows\AccesoDatos.dll
-C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\MusicStore\bin\Debug\net5.0-windows\Entidades.dll
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\MusicStore\bin\Debug\net5.0-windows\AxInterop.WMPLib.dll
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\MusicStore\bin\Debug\net5.0-windows\MACTrackBarLib.dll
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\MusicStore\bin\Debug\net5.0-windows\Interop.WMPLib.dll
@@ -31,7 +30,6 @@ C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\MusicStore\bin\Debug
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\MusicStore\bin\Debug\net5.0-windows\frmPreview.pdb
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\MusicStore\bin\Debug\net5.0-windows\frmPreview.exe.config
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\MusicStore\bin\Debug\net5.0-windows\AccesoDatos.pdb
-C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\MusicStore\bin\Debug\net5.0-windows\Entidades.pdb
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\MusicStore\obj\Debug\net5.0-windows\MusicStore.csproj.CopyComplete
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\MusicStore\bin\Debug\net5.0-windows\Enti.dll
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\MusicStore\bin\Debug\net5.0-windows\Enti.pdb

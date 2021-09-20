@@ -44,6 +44,7 @@
     <Compile Include="EAlbum.cs" />
     <Compile Include="EArtista.cs" />
     <Compile Include="ECancion.cs" />
+    <Compile Include="ECliente.cs" />
     <Compile Include="EFactura.cs" />
     <Compile Include="EItemFactura.cs" />
     <Compile Include="EUsuario.cs" />

@@ -75,14 +75,25 @@ namespace AccesoDatos
 
         }
 
-        
-        
+        public DataTable mostrarlogin()
+        {
 
-       
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "mostrarlogin";
+            comando.CommandType = CommandType.StoredProcedure;
+            leer = comando.ExecuteReader();
+            tabla.Load(leer);
+            conexion.CerrarConexion();
+            return tabla;
 
-       
+        }
 
-        
+
+
+
+
+
+
 
 
     }

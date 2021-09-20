@@ -44,6 +44,7 @@
     <Compile Include="AlbumDAL.cs" />
     <Compile Include="ArtistaDAL.cs" />
     <Compile Include="CancionDAL.cs" />
+    <Compile Include="ClienteDAL.cs" />
     <Compile Include="ConexionBD.cs" />
     <Compile Include="FacturaDAL.cs" />
     <Compile Include="ItemFacturaDAL.cs" />
