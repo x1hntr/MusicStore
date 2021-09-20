@@ -34,6 +34,15 @@ namespace frmDashboardAdmin
             this.horaFecha = new System.Windows.Forms.Timer(this.components);
             this.lblUsername = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.lblHora = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.txtZona = new System.Windows.Forms.Label();
+            this.pnlContenedor = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnFacturas = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnArtista = new System.Windows.Forms.Button();
@@ -44,22 +53,13 @@ namespace frmDashboardAdmin
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnVentas = new System.Windows.Forms.Button();
             this.btnAlbumes = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lblFecha = new System.Windows.Forms.Label();
-            this.lblHora = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.txtZona = new System.Windows.Forms.Label();
-            this.pnlContenedor = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.pnlContenedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // horaFecha
@@ -97,6 +97,105 @@ namespace frmDashboardAdmin
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(238, 600);
             this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.tableLayoutPanel1);
+            this.panel2.Location = new System.Drawing.Point(244, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(694, 100);
+            this.panel2.TabIndex = 9;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel4, 1, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(694, 100);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.lblFecha);
+            this.panel3.Controls.Add(this.lblHora);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(341, 94);
+            this.panel3.TabIndex = 0;
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Century Gothic", 16F);
+            this.lblFecha.ForeColor = System.Drawing.Color.White;
+            this.lblFecha.Location = new System.Drawing.Point(6, 53);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(80, 25);
+            this.lblFecha.TabIndex = 10;
+            this.lblFecha.Text = "label1";
+            // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.Font = new System.Drawing.Font("Century Gothic", 28F);
+            this.lblHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.lblHora.Location = new System.Drawing.Point(3, 8);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(136, 45);
+            this.lblHora.TabIndex = 9;
+            this.lblHora.Text = "label1";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.txtZona);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(350, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(341, 94);
+            this.panel4.TabIndex = 1;
+            // 
+            // txtZona
+            // 
+            this.txtZona.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtZona.AutoSize = true;
+            this.txtZona.Font = new System.Drawing.Font("Century Gothic", 28F);
+            this.txtZona.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.txtZona.Location = new System.Drawing.Point(186, 24);
+            this.txtZona.Name = "txtZona";
+            this.txtZona.Size = new System.Drawing.Size(136, 45);
+            this.txtZona.TabIndex = 10;
+            this.txtZona.Text = "label1";
+            // 
+            // pnlContenedor
+            // 
+            this.pnlContenedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
+            this.pnlContenedor.Controls.Add(this.label1);
+            this.pnlContenedor.Location = new System.Drawing.Point(244, 108);
+            this.pnlContenedor.Name = "pnlContenedor";
+            this.pnlContenedor.Size = new System.Drawing.Size(694, 480);
+            this.pnlContenedor.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(8, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Resumen";
             // 
             // btnFacturas
             // 
@@ -170,7 +269,7 @@ namespace frmDashboardAdmin
             this.btnResumen.Name = "btnResumen";
             this.btnResumen.Size = new System.Drawing.Size(222, 34);
             this.btnResumen.TabIndex = 6;
-            this.btnResumen.Text = "RESUMEN";
+            this.btnResumen.Text = "INICIO";
             this.btnResumen.UseVisualStyleBackColor = false;
             this.btnResumen.Click += new System.EventHandler(this.btnResumen_Click);
             // 
@@ -279,105 +378,6 @@ namespace frmDashboardAdmin
             this.btnAlbumes.UseVisualStyleBackColor = false;
             this.btnAlbumes.Click += new System.EventHandler(this.btnAlbumes_Click);
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.tableLayoutPanel1);
-            this.panel2.Location = new System.Drawing.Point(244, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(694, 100);
-            this.panel2.TabIndex = 9;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel4, 1, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(694, 100);
-            this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.lblFecha);
-            this.panel3.Controls.Add(this.lblHora);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(3, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(341, 94);
-            this.panel3.TabIndex = 0;
-            // 
-            // lblFecha
-            // 
-            this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Century Gothic", 18F);
-            this.lblFecha.ForeColor = System.Drawing.Color.White;
-            this.lblFecha.Location = new System.Drawing.Point(15, 53);
-            this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(86, 30);
-            this.lblFecha.TabIndex = 10;
-            this.lblFecha.Text = "label1";
-            // 
-            // lblHora
-            // 
-            this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Century Gothic", 28F);
-            this.lblHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.lblHora.Location = new System.Drawing.Point(12, 8);
-            this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(136, 45);
-            this.lblHora.TabIndex = 9;
-            this.lblHora.Text = "label1";
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.txtZona);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(350, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(341, 94);
-            this.panel4.TabIndex = 1;
-            // 
-            // txtZona
-            // 
-            this.txtZona.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtZona.AutoSize = true;
-            this.txtZona.Font = new System.Drawing.Font("Century Gothic", 28F);
-            this.txtZona.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.txtZona.Location = new System.Drawing.Point(103, 24);
-            this.txtZona.Name = "txtZona";
-            this.txtZona.Size = new System.Drawing.Size(136, 45);
-            this.txtZona.TabIndex = 10;
-            this.txtZona.Text = "label1";
-            // 
-            // pnlContenedor
-            // 
-            this.pnlContenedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
-            this.pnlContenedor.Controls.Add(this.label1);
-            this.pnlContenedor.Location = new System.Drawing.Point(244, 108);
-            this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(694, 480);
-            this.pnlContenedor.TabIndex = 10;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Resumen";
-            // 
             // Form1
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -396,7 +396,6 @@ namespace frmDashboardAdmin
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -405,6 +404,7 @@ namespace frmDashboardAdmin
             this.panel4.PerformLayout();
             this.pnlContenedor.ResumeLayout(false);
             this.pnlContenedor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

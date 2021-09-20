@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AccesoDatos;
 using System.Data;
+using Enti;
 
 
 namespace Negocio
@@ -35,6 +36,20 @@ namespace Negocio
         {
 
             cl.eliminarCliente(Convert.ToInt32(id));
+        }
+        public List<ECliente> ListaClientes()
+        {
+            ClienteCPN ar = new ClienteCPN();
+            DataTable tab = ar.MostrarCliente();
+            List<ECliente> listaClientes = new List<ECliente>();
+            foreach (DataRow d in tab.Rows)
+            {
+                ECliente cliente = new ECliente(int.Parse(d["idCliente"].ToString()), d["nombre"].ToString(),
+                    d["apellido"].ToString(), d["ci"].ToString(), d["tarjeta"].ToString());
+                listaClientes.Add(cliente);
+
+            }
+            return listaClientes;
         }
     }
 }

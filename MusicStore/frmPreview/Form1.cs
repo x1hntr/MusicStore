@@ -21,14 +21,17 @@ namespace frmPreview
         private List<EAlbum> listaAlbum = new List<EAlbum>();
         private List<EAlbum> listaAlbumtotal = new List<EAlbum>();
         private List<ECancion> listaCancion = new List<ECancion>();
-        string Path = @"C:\Users\x1dxn\OneDrive\Documentos\AudiosPBE";
-
-        string PathM;
-
+        private List<ECliente> listaClientes = new List<ECliente>();
+        private List<EFactura> listaFacturas = new List<EFactura>();
         AlbumCPN al = new AlbumCPN();
         CancionCPN ca = new CancionCPN();
         ClienteCPN cl = new ClienteCPN();
-      
+        ItemFacturaCPN item = new ItemFacturaCPN();
+        FacturaCPN fact = new FacturaCPN();
+
+        string Path = @"C:\Users\x1dxn\OneDrive\Documentos\AudiosPBE";
+
+        string PathM;
 
         public Form1()
         {
@@ -40,8 +43,6 @@ namespace frmPreview
             lblHora.Text = DateTime.Now.ToString("h:mm:ss");
             lblFecha.Text = DateTime.Now.ToLongDateString();
         }
-
-      
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
@@ -107,9 +108,9 @@ namespace frmPreview
             {
                 FileInfo fk = new FileInfo(Directory.GetFiles(Path)[tam]);
 
-                if (ca1.Nombre == fk.Name) {
+                if (ca1.Link == fk.Name) {
                     PathM = fk.FullName;
-                    lbltitulo.Text = ca1.Nombre;
+                    lbltitulo.Text = ca1.Link;
                 }
                
             }
@@ -135,12 +136,64 @@ namespace frmPreview
         private void Form1_Load(object sender, EventArgs e)
         {
             llenarAlbum();
-
+            btnAgregar.Enabled = false;
+            btnFinalizar.Enabled = false;
 
     }
 
-        private void cmbAlbumes_SelectedIndexChanged(object sender, EventArgs e)
+   
+
+        public void llenarAlbum()
         {
+            listaAlbum = al.ListaAlbum();
+            foreach (EAlbum al in listaAlbum)
+            {
+                cmbAlbumes.Items.Add(al);
+            }
+        }
+
+        private void btnFinalizar_Click(object sender, EventArgs e)
+        {
+            if (txtNombre.Text != "" && txtApellido.Text != "" && txtCedula.Text != "" && txtTarjeta.Text != "")
+            {
+                cl.insertarCliente(txtNombre.Text, txtApellido.Text, txtCedula.Text, txtTarjeta.Text);
+                MessageBox.Show("Se ha registrado una venta corretamente");
+                txtNombre.Text = "";
+                txtApellido.Text = "";
+                txtCedula.Text = "";
+                txtTarjeta.Text = "";
+                listaClientes = cl.ListaClientes();
+                ECliente cli1 = listaClientes.LastOrDefault();
+                fact.insertarFactura(cli1.IdCliente, DateTime.Now, Convert.ToDecimal(lblTotal.Text));
+                listaFacturas = fact.ListaFactura();
+
+                EFactura fact1 = listaFacturas.LastOrDefault();
+                foreach (EAlbum album in lbCarrito.Items)
+                {
+                    item.insertaritemFactura(fact1.IdFactura, album.IdAlbum);
+
+                }
+                txtNombre.Text = "";
+                txtApellido.Text = "";
+                txtCedula.Text = "";
+                txtTarjeta.Text = "";
+                lbCarrito.Items.Clear();
+
+                txtApellido.Enabled = false;
+                txtNombre.Enabled = false;
+                txtCedula.Enabled = false;
+                txtTarjeta.Enabled = false;
+            }
+            else
+                MessageBox.Show("Llene correctamente los datos", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            
+        }
+
+        private void cmbAlbumes_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            btnAgregar.Enabled = true;
+            btnFinalizar.Enabled = true;
+
             lbCanciones.Items.Clear();
             EAlbum ca1 = cmbAlbumes.SelectedItem as EAlbum;
             listaCancion = ca.ListaCancion();
@@ -154,16 +207,22 @@ namespace frmPreview
             }
         }
 
-        public void llenarAlbum()
+        private void txtCedula_KeyPress(object sender, KeyPressEventArgs e)
         {
-            listaAlbum = al.ListaAlbum();
-            foreach (EAlbum al in listaAlbum)
+            if (!(char.IsDigit(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
             {
-                cmbAlbumes.Items.Add(al);
+                e.Handled = true;
+                return;
             }
         }
 
-
-
+        private void txtTarjeta_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsDigit(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                e.Handled = true;
+                return;
+            }
+        }
     }
 }

@@ -33,7 +33,6 @@ namespace frmDashboardAdmin
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.USUARIO = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pbMinimizar = new System.Windows.Forms.PictureBox();
@@ -50,9 +49,9 @@ namespace frmDashboardAdmin
             this.btnAcceder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAcceder.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.btnAcceder.ForeColor = System.Drawing.Color.White;
-            this.btnAcceder.Location = new System.Drawing.Point(67, 283);
+            this.btnAcceder.Location = new System.Drawing.Point(272, 273);
             this.btnAcceder.Name = "btnAcceder";
-            this.btnAcceder.Size = new System.Drawing.Size(300, 35);
+            this.btnAcceder.Size = new System.Drawing.Size(260, 35);
             this.btnAcceder.TabIndex = 0;
             this.btnAcceder.Text = "ACCEDER";
             this.btnAcceder.UseVisualStyleBackColor = false;
@@ -64,7 +63,7 @@ namespace frmDashboardAdmin
             this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUser.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.txtUser.ForeColor = System.Drawing.Color.LightGray;
-            this.txtUser.Location = new System.Drawing.Point(166, 196);
+            this.txtUser.Location = new System.Drawing.Point(272, 180);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(260, 31);
             this.txtUser.TabIndex = 1;
@@ -75,7 +74,7 @@ namespace frmDashboardAdmin
             this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPass.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.txtPass.ForeColor = System.Drawing.Color.LightGray;
-            this.txtPass.Location = new System.Drawing.Point(166, 231);
+            this.txtPass.Location = new System.Drawing.Point(272, 217);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(260, 31);
@@ -84,28 +83,20 @@ namespace frmDashboardAdmin
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(147, 39);
+            this.label1.Location = new System.Drawing.Point(222, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 32);
+            this.label1.Size = new System.Drawing.Size(234, 77);
             this.label1.TabIndex = 6;
             this.label1.Text = "LOGIN";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.panel1.Location = new System.Drawing.Point(467, 39);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(203, 304);
-            this.panel1.TabIndex = 11;
             // 
             // USUARIO
             // 
             this.USUARIO.AutoSize = true;
             this.USUARIO.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.USUARIO.ForeColor = System.Drawing.Color.LightGray;
-            this.USUARIO.Location = new System.Drawing.Point(63, 196);
+            this.USUARIO.Location = new System.Drawing.Point(156, 182);
             this.USUARIO.Name = "USUARIO";
             this.USUARIO.Size = new System.Drawing.Size(92, 22);
             this.USUARIO.TabIndex = 12;
@@ -116,7 +107,7 @@ namespace frmDashboardAdmin
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.label2.ForeColor = System.Drawing.Color.LightGray;
-            this.label2.Location = new System.Drawing.Point(23, 231);
+            this.label2.Location = new System.Drawing.Point(109, 219);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(139, 22);
             this.label2.TabIndex = 13;
@@ -150,7 +141,6 @@ namespace frmDashboardAdmin
             this.ClientSize = new System.Drawing.Size(681, 385);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.USUARIO);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pbMinimizar);
             this.Controls.Add(this.pbCerrar);
@@ -175,7 +165,6 @@ namespace frmDashboardAdmin
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pbMinimizar;
         private System.Windows.Forms.PictureBox pbCerrar;
         private System.Windows.Forms.Label USUARIO;

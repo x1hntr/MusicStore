@@ -313,5 +313,14 @@
   <ItemGroup>
     <None Include="Resources\Minimize_Icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JD %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vol.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

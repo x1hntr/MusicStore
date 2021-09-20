@@ -163,6 +163,26 @@ namespace frmDashboardAdmin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap JD {
+            get {
+                object obj = ResourceManager.GetObject("JD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap JD__3_ {
+            get {
+                object obj = ResourceManager.GetObject("JD__3_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap letras_de_canciones {
             get {
                 object obj = ResourceManager.GetObject("letras_de_canciones", resourceCulture);
@@ -276,6 +296,16 @@ namespace frmDashboardAdmin.Properties {
         internal static System.Drawing.Bitmap vision {
             get {
                 object obj = ResourceManager.GetObject("vision", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vol {
+            get {
+                object obj = ResourceManager.GetObject("vol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

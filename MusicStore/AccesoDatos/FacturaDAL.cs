@@ -10,7 +10,7 @@ namespace AccesoDatos
 {
     public class FacturaDAL
     {
-        
+
         private ConexionBD conexion = new ConexionBD();
         SqlDataReader leer;
         DataTable tabla = new DataTable();
@@ -20,8 +20,21 @@ namespace AccesoDatos
         {
 
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "mostrarFactura";
+            comando.CommandText = "emitirFactura";
             comando.CommandType = CommandType.StoredProcedure;
+            leer = comando.ExecuteReader();
+            tabla.Load(leer);
+            conexion.CerrarConexion();
+            return tabla;
+
+        }
+        public DataTable mostrarFactura(int id)
+        {
+
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "emitirFactura3";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@id", id);
             leer = comando.ExecuteReader();
             tabla.Load(leer);
             conexion.CerrarConexion();
@@ -34,7 +47,7 @@ namespace AccesoDatos
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "insertarFactura";
             comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@id_Usuario", id_Usuario);
+            comando.Parameters.AddWithValue("@id_Cliente", id_Usuario);
             comando.Parameters.AddWithValue("@fechaCompra", fechaCompra);
             comando.Parameters.AddWithValue("@total", total);
 
@@ -49,7 +62,7 @@ namespace AccesoDatos
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "editarFactura";
             comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@id_Usuario", id_Usuario);
+            comando.Parameters.AddWithValue("@id_Cliente", id_Usuario);
             comando.Parameters.AddWithValue("@fechaCompra", fechaCompra);
             comando.Parameters.AddWithValue("@total", total);
             comando.ExecuteNonQuery();

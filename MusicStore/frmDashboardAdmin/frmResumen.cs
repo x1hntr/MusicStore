@@ -20,9 +20,7 @@ namespace frmDashboardAdmin
 
         private void tmrUpdate_Tick(object sender, EventArgs e)
         {
-            ventas = ventas + 1;
-            lblAlbumes.Text = ventas.ToString();
-            lblCaja.Text = ventas.ToString();
+           
         }
 
         

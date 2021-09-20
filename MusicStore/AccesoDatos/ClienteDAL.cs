@@ -35,9 +35,9 @@ namespace AccesoDatos
             comando.CommandText = "insertarCliente";
             comando.CommandType = CommandType.StoredProcedure;
             comando.Parameters.AddWithValue("@nombre", nombre);
-            comando.Parameters.AddWithValue("@link", apellido);
-            comando.Parameters.AddWithValue("@genero", ci);
-            comando.Parameters.AddWithValue("@idal", tarjeta);
+            comando.Parameters.AddWithValue("@apellido", apellido);
+            comando.Parameters.AddWithValue("@ci", ci);
+            comando.Parameters.AddWithValue("@tarjeta", tarjeta);
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
             conexion.CerrarConexion();
@@ -47,13 +47,13 @@ namespace AccesoDatos
         {
 
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "editarCancion";
+            comando.CommandText = "editarCliente";
             comando.CommandType = CommandType.StoredProcedure;
             comando.Parameters.AddWithValue("@idCliente", id);
             comando.Parameters.AddWithValue("@nombre", nombre);
-            comando.Parameters.AddWithValue("@link", apellido);
-            comando.Parameters.AddWithValue("@genero", ci);
-            comando.Parameters.AddWithValue("@idal", tarjeta);
+            comando.Parameters.AddWithValue("@apellido", apellido);
+            comando.Parameters.AddWithValue("@ci", ci);
+            comando.Parameters.AddWithValue("@tarjeta", tarjeta);
             comando.Parameters.Clear();
             conexion.CerrarConexion();
 
