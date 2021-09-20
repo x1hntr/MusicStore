@@ -85,19 +85,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>jrOdmLIsdquK25ED4dLTIMrOt8ULCYGX3RtqtDYo/HI=</dsig:DigestValue>
+        <dsig:DigestValue>Bwh30bNFDeYVHwvP+mmGcJiDoOLKk0tLDbh0TWPnVHg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="frmPreview.exe" size="3204608">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="frmPreview.exe" size="3205120">
       <assemblyIdentity name="frmPreview" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>JgsnJiptkKN7rkOUh2DjBV8hxac5tXF18xpSHn7viAE=</dsig:DigestValue>
+        <dsig:DigestValue>+nUScVAJBQqiJA+tWHQxT0HEWsjksjzrVUCUM4Ynezk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

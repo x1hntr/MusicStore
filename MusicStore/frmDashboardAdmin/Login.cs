@@ -55,5 +55,10 @@ namespace frmDashboardAdmin
             else
                 MessageBox.Show("Por favor Ingrese todos los parametros");
         }
+
+        private void pbCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

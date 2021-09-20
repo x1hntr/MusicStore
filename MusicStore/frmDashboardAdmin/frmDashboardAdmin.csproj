@@ -233,9 +233,6 @@
     <None Include="Resources\informacion.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Close_Icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\repetir.png" />
   </ItemGroup>
   <ItemGroup>
@@ -309,6 +306,12 @@
       <Project>{5c9e1634-f5e7-4d9d-8d57-ce2e6d07b7d5}</Project>
       <Name>Enti</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize_Icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -34,10 +34,10 @@ namespace frmDashboardAdmin
             this.txtPass = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pbMinimizar = new System.Windows.Forms.PictureBox();
-            this.pbCerrar = new System.Windows.Forms.PictureBox();
             this.USUARIO = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pbMinimizar = new System.Windows.Forms.PictureBox();
+            this.pbCerrar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).BeginInit();
             this.SuspendLayout();
@@ -63,7 +63,7 @@ namespace frmDashboardAdmin
             this.txtUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
             this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUser.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.txtUser.ForeColor = System.Drawing.Color.DimGray;
+            this.txtUser.ForeColor = System.Drawing.Color.LightGray;
             this.txtUser.Location = new System.Drawing.Point(166, 196);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(260, 31);
@@ -74,7 +74,7 @@ namespace frmDashboardAdmin
             this.txtPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
             this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPass.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.txtPass.ForeColor = System.Drawing.Color.DimGray;
+            this.txtPass.ForeColor = System.Drawing.Color.LightGray;
             this.txtPass.Location = new System.Drawing.Point(166, 231);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
@@ -100,24 +100,6 @@ namespace frmDashboardAdmin
             this.panel1.Size = new System.Drawing.Size(203, 304);
             this.panel1.TabIndex = 11;
             // 
-            // pbMinimizar
-            // 
-            this.pbMinimizar.Location = new System.Drawing.Point(636, 10);
-            this.pbMinimizar.Name = "pbMinimizar";
-            this.pbMinimizar.Size = new System.Drawing.Size(16, 16);
-            this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbMinimizar.TabIndex = 5;
-            this.pbMinimizar.TabStop = false;
-            // 
-            // pbCerrar
-            // 
-            this.pbCerrar.Location = new System.Drawing.Point(657, 10);
-            this.pbCerrar.Name = "pbCerrar";
-            this.pbCerrar.Size = new System.Drawing.Size(16, 16);
-            this.pbCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbCerrar.TabIndex = 4;
-            this.pbCerrar.TabStop = false;
-            // 
             // USUARIO
             // 
             this.USUARIO.AutoSize = true;
@@ -140,6 +122,26 @@ namespace frmDashboardAdmin
             this.label2.TabIndex = 13;
             this.label2.Text = "CONTRASEÑA";
             // 
+            // pbMinimizar
+            // 
+            this.pbMinimizar.Location = new System.Drawing.Point(636, 10);
+            this.pbMinimizar.Name = "pbMinimizar";
+            this.pbMinimizar.Size = new System.Drawing.Size(16, 16);
+            this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbMinimizar.TabIndex = 5;
+            this.pbMinimizar.TabStop = false;
+            // 
+            // pbCerrar
+            // 
+            this.pbCerrar.Image = global::frmDashboardAdmin.Properties.Resources.Close_Icon;
+            this.pbCerrar.Location = new System.Drawing.Point(657, 10);
+            this.pbCerrar.Name = "pbCerrar";
+            this.pbCerrar.Size = new System.Drawing.Size(16, 16);
+            this.pbCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbCerrar.TabIndex = 4;
+            this.pbCerrar.TabStop = false;
+            this.pbCerrar.Click += new System.EventHandler(this.pbCerrar_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -157,7 +159,7 @@ namespace frmDashboardAdmin
             this.Controls.Add(this.btnAcceder);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
-            this.Opacity = 0.9D;
+            this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).EndInit();

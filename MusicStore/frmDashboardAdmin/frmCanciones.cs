@@ -85,15 +85,20 @@ namespace frmDashboardAdmin
                 MessageBox.Show("Llene todos los campos para continuar", "Alert");
         }
 
-      
+
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            id = dgvCanciones.CurrentRow.Cells["idCancion"].Value.ToString();
-            cl.eliminarCancion(id);
-            MessageBox.Show("Eliminado correctamente");
-            CancionCPN cl1 = new CancionCPN();
-            dgvCanciones.DataSource = cl1.MostrarCancion();
+            if (dgvCanciones.SelectedRows.Count > 0)
+            {
+                id = dgvCanciones.CurrentRow.Cells["idCancion"].Value.ToString();
+                cl.eliminarCancion(id);
+                MessageBox.Show("Eliminado correctamente");
+                CancionCPN cl1 = new CancionCPN();
+                dgvCanciones.DataSource = cl1.MostrarCancion();
+            }
+            else
+                MessageBox.Show("Seleccione una fila para Eliminar");
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)

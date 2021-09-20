@@ -35,8 +35,6 @@ namespace frmPreview
             this.panel2 = new System.Windows.Forms.Panel();
             this.mtbVolumen = new XComponent.SliderBar.MACTrackBar();
             this.wmPlayer = new AxWMPLib.AxWindowsMediaPlayer();
-            this.button1 = new System.Windows.Forms.Button();
-            this.lblArtista = new System.Windows.Forms.Label();
             this.btnNext = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnPrevious = new System.Windows.Forms.Button();
@@ -58,7 +56,6 @@ namespace frmPreview
             this.lbCarrito = new System.Windows.Forms.ListBox();
             this.cmbAlbumes = new System.Windows.Forms.ComboBox();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.lbPrueba = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.wmPlayer)).BeginInit();
@@ -85,8 +82,6 @@ namespace frmPreview
             this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel2.Controls.Add(this.mtbVolumen);
             this.panel2.Controls.Add(this.wmPlayer);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.lblArtista);
             this.panel2.Controls.Add(this.btnNext);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.btnPrevious);
@@ -134,27 +129,6 @@ namespace frmPreview
             this.wmPlayer.TabIndex = 3;
             this.wmPlayer.Visible = false;
             this.wmPlayer.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.wmPlayer_PlayStateChange);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(151, 225);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // lblArtista
-            // 
-            this.lblArtista.AutoSize = true;
-            this.lblArtista.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArtista.ForeColor = System.Drawing.Color.LightGray;
-            this.lblArtista.Location = new System.Drawing.Point(39, 242);
-            this.lblArtista.Name = "lblArtista";
-            this.lblArtista.Size = new System.Drawing.Size(52, 17);
-            this.lblArtista.TabIndex = 6;
-            this.lblArtista.Text = "Artista.";
             // 
             // btnNext
             // 
@@ -211,7 +185,7 @@ namespace frmPreview
             this.lbltitulo.AutoSize = true;
             this.lbltitulo.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.lbltitulo.ForeColor = System.Drawing.Color.LightGray;
-            this.lbltitulo.Location = new System.Drawing.Point(38, 225);
+            this.lbltitulo.Location = new System.Drawing.Point(38, 227);
             this.lbltitulo.Name = "lbltitulo";
             this.lbltitulo.Size = new System.Drawing.Size(45, 17);
             this.lbltitulo.TabIndex = 5;
@@ -224,7 +198,7 @@ namespace frmPreview
             this.mtbDuracion.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mtbDuracion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(125)))), ((int)(((byte)(123)))));
             this.mtbDuracion.IndentHeight = 6;
-            this.mtbDuracion.Location = new System.Drawing.Point(42, 262);
+            this.mtbDuracion.Location = new System.Drawing.Point(41, 258);
             this.mtbDuracion.Maximum = 100;
             this.mtbDuracion.Minimum = 0;
             this.mtbDuracion.Name = "mtbDuracion";
@@ -338,7 +312,6 @@ namespace frmPreview
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.lbPrueba);
             this.panel5.Controls.Add(this.lblTotal);
             this.panel5.Controls.Add(this.btnFinalizar);
             this.panel5.Controls.Add(this.lbCarrito);
@@ -397,16 +370,6 @@ namespace frmPreview
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // lbPrueba
-            // 
-            this.lbPrueba.AutoSize = true;
-            this.lbPrueba.ForeColor = System.Drawing.Color.LightGray;
-            this.lbPrueba.Location = new System.Drawing.Point(16, 221);
-            this.lbPrueba.Name = "lbPrueba";
-            this.lbPrueba.Size = new System.Drawing.Size(35, 13);
-            this.lbPrueba.TabIndex = 6;
-            this.lbPrueba.Text = "label1";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -442,11 +405,9 @@ namespace frmPreview
         private System.Windows.Forms.Button btnPrevious;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lblArtista;
         private System.Windows.Forms.Label lbltitulo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer horaFecha;
-        private System.Windows.Forms.Button button1;
         private AxWMPLib.AxWindowsMediaPlayer wmPlayer;
         private XComponent.SliderBar.MACTrackBar mtbVolumen;
         private XComponent.SliderBar.MACTrackBar mtbDuracion;
@@ -464,7 +425,6 @@ namespace frmPreview
         private System.Windows.Forms.Button btnFinalizar;
         private System.Windows.Forms.ListBox lbCarrito;
         private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.Label lbPrueba;
     }
 }
 

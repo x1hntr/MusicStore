@@ -7,21 +7,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using Negocio;
 using Enti;
+using System.IO;
+
 namespace frmPreview
 {
     public partial class Form1 : Form
     {
         bool Play = false;
-        string[] ArchivosMP3;
-        string[] rutasArchivosMP3;
+        
         private List<EAlbum> listaAlbum = new List<EAlbum>();
         private List<EAlbum> listaAlbumtotal = new List<EAlbum>();
         private List<ECancion> listaCancion = new List<ECancion>();
+        string Path = @"C:\Users\x1dxn\OneDrive\Documentos\AudiosPBE";
+
+        string PathM;
+
         AlbumCPN al = new AlbumCPN();
         CancionCPN ca = new CancionCPN();
         ClienteCPN cl = new ClienteCPN();
+      
 
         public Form1()
         {
@@ -34,19 +41,7 @@ namespace frmPreview
             lblFecha.Text = DateTime.Now.ToLongDateString();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog CajaDeBusquedadeArchivos = new OpenFileDialog();
-            CajaDeBusquedadeArchivos.Multiselect = true;
-            if (CajaDeBusquedadeArchivos.ShowDialog() == DialogResult.OK) {
-                ArchivosMP3 = CajaDeBusquedadeArchivos.SafeFileNames;
-                rutasArchivosMP3 = CajaDeBusquedadeArchivos.FileNames;
-                foreach (var ArchivoMP3 in ArchivosMP3) {
-                    lbCanciones.Items.Add(ArchivoMP3);
-                }
-                wmPlayer.URL = rutasArchivosMP3[0];
-            }
-        }
+      
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
@@ -104,12 +99,21 @@ namespace frmPreview
 
         private void lstArtistas_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //wmPlayer.URL = rutasArchivosMP3[lbCanciones.SelectedIndex];
-            //btnPlay.Image = Properties.Resources.pausa;
-            //lbltitulo.Text = ArchivosMP3[lbCanciones.SelectedIndex];
-            // cmbAlbum.Items.Add(ArchivosMP3[lbCanciones.SelectedIndex]);
+           
             ECancion ca1 = lbCanciones.SelectedItem as ECancion;
-            lbPrueba.Text = ca1.Link;
+            
+          
+            for (int tam = 0; tam < Directory.EnumerateFiles(Path).Count(); tam++) 
+            {
+                FileInfo fk = new FileInfo(Directory.GetFiles(Path)[tam]);
+
+                if (ca1.Nombre == fk.Name) {
+                    PathM = fk.FullName;
+                    lbltitulo.Text = ca1.Nombre;
+                }
+               
+            }
+            wmPlayer.URL = PathM;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
