@@ -17,8 +17,7 @@ namespace frmDashboardAdmin
         public Form1()
         {
             InitializeComponent();
-            txtZona.Text = "Resumen";
-            abrirFormularioHijo(new frmResumen());
+            
         }
        
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -103,6 +102,12 @@ namespace frmDashboardAdmin
         {
             txtZona.Text = "Facturas";
             abrirFormularioHijo(new frmFactura());
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            txtZona.Text = "Resumen";
+            abrirFormularioHijo(new frmResumen());
         }
     }
 }

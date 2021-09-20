@@ -7,8 +7,75 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "MusicStore/1.0.0": {
+        "dependencies": {
+          "frmDashboardAdmin": "1.0.0.0"
+        },
         "runtime": {
           "MusicStore.dll": {}
+        }
+      },
+      "frmDashboardAdmin/1.0.0.0": {
+        "runtime": {
+          "frmDashboardAdmin.exe": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Negocio/1.0.0.0": {
+        "runtime": {
+          "Negocio.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "frmPreview/1.0.0.0": {
+        "runtime": {
+          "frmPreview.exe": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "AccesoDatos/1.0.0.0": {
+        "runtime": {
+          "AccesoDatos.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Entidades/1.0.0.0": {
+        "runtime": {
+          "Entidades.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "AxInterop.WMPLib/1.0.0.0": {
+        "runtime": {
+          "AxInterop.WMPLib.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "MACTrackBarLib/1.0.5896.38740": {
+        "runtime": {
+          "MACTrackBarLib.dll": {
+            "assemblyVersion": "1.0.5896.38740",
+            "fileVersion": "1.0.5896.38740"
+          }
+        }
+      },
+      "Interop.WMPLib/1.0.0.0": {
+        "runtime": {
+          "Interop.WMPLib.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -16,6 +83,46 @@
   "libraries": {
     "MusicStore/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "frmDashboardAdmin/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Negocio/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "frmPreview/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AccesoDatos/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Entidades/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AxInterop.WMPLib/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MACTrackBarLib/1.0.5896.38740": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Interop.WMPLib/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

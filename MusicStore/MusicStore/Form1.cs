@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using frmDashboardAdmin;
 
 namespace MusicStore
 {
@@ -32,6 +33,18 @@ namespace MusicStore
         private void pbMinimizar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAcceder_Click(object sender, EventArgs e)
+        {
+            frmDashboardAdmin.Form1 dash = new frmDashboardAdmin.Form1();
+            dash.Show();
+            this.Close();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -16,7 +16,7 @@ namespace frmDashboardAdmin
         AlbumCPN al = new AlbumCPN();
         CancionCPN cl = new CancionCPN();
 
-        bool Play = false;
+       
         string[] ArchivosMP3;
         string[] rutasArchivosMP3;
 
