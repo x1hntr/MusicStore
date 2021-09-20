@@ -59,7 +59,7 @@ namespace frmDashboardAdmin
                     txtPassword.Text = "";
                     UsuarioCPN us1 = new UsuarioCPN();
                     dgvUsuario.DataSource = us1.MostrarUsuarios();
-
+                    editar = false;
                 }
             }
             else

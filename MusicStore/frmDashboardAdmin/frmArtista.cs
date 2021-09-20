@@ -45,7 +45,7 @@ namespace frmDashboardAdmin
                     editar = false;
                     ArtistaCPN ar1 = new ArtistaCPN();
                     dgvArtista.DataSource = ar1.MostrarArtista();
-                    
+                    editar = false;
                 }
             }else
                 MessageBox.Show("Llene todos los campos para continuar", "Alert");

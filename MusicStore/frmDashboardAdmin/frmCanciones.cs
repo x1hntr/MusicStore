@@ -54,7 +54,7 @@ namespace frmDashboardAdmin
                 if (editar == false)
                 {
                     
-                    cl.insertarCancion(txtNombre.Text, txtLink.Text, txtGenero.Text, int.Parse(txtAlbum.Text));
+                    cl.insertarCancion(txtLink.Text, txtNombre.Text, txtGenero.Text, int.Parse(txtAlbum.Text));
                     MessageBox.Show("Se ha insertado un nuevo álbum corretamente");
                     txtAlbum.Text = "";
                     txtNombre.Text = "";
@@ -76,7 +76,7 @@ namespace frmDashboardAdmin
                     txtGenero.Text = "";
                     CancionCPN cl1 = new CancionCPN();
                     dgvCanciones.DataSource = cl1.MostrarCancion();
-
+                    editar = false;
 
 
                 }
@@ -85,13 +85,7 @@ namespace frmDashboardAdmin
                 MessageBox.Show("Llene todos los campos para continuar", "Alert");
         }
 
-        private void dgvAlbum_Click(object sender, EventArgs e)
-        {
-            if (dgvAlbum.SelectedRows.Count != 0) {
-                txtAlbum.Text = dgvAlbum.CurrentRow.Cells["idAlbum"].Value.ToString();
-                txtGenero.Text = dgvAlbum.CurrentRow.Cells["genero"].Value.ToString();
-            }
-        }
+      
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
@@ -137,7 +131,8 @@ namespace frmDashboardAdmin
         {
             if (dgvAlbum.SelectedRows.Count != 0)
             {
-                txtLink.Text = dgvAlbum.CurrentRow.Cells["idAlbum"].Value.ToString();
+                txtAlbum.Text = dgvAlbum.CurrentRow.Cells["idAlbum"].Value.ToString();
+                txtGenero.Text = dgvAlbum.CurrentRow.Cells["genero"].Value.ToString();
 
             }
         }
