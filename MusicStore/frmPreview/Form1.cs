@@ -104,10 +104,12 @@ namespace frmPreview
 
         private void lstArtistas_SelectedIndexChanged(object sender, EventArgs e)
         {
-            wmPlayer.URL = rutasArchivosMP3[lbCanciones.SelectedIndex];
-            btnPlay.Image = Properties.Resources.pausa;
-            lbltitulo.Text = ArchivosMP3[lbCanciones.SelectedIndex];
-           // cmbAlbum.Items.Add(ArchivosMP3[lbCanciones.SelectedIndex]);
+            //wmPlayer.URL = rutasArchivosMP3[lbCanciones.SelectedIndex];
+            //btnPlay.Image = Properties.Resources.pausa;
+            //lbltitulo.Text = ArchivosMP3[lbCanciones.SelectedIndex];
+            // cmbAlbum.Items.Add(ArchivosMP3[lbCanciones.SelectedIndex]);
+            ECancion ca1 = lbCanciones.SelectedItem as ECancion;
+            lbPrueba.Text = ca1.Link;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -128,9 +130,36 @@ namespace frmPreview
 
         private void Form1_Load(object sender, EventArgs e)
         {
-         
+            llenarAlbum();
 
 
     }
-}
+
+        private void cmbAlbumes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lbCanciones.Items.Clear();
+            EAlbum ca1 = cmbAlbumes.SelectedItem as EAlbum;
+            listaCancion = ca.ListaCancion();
+            foreach (ECancion ca2 in listaCancion)
+            {
+                if (ca2.Id_Album == ca1.IdAlbum)
+                {
+                    lbCanciones.Items.Add(ca2);
+                }
+
+            }
+        }
+
+        public void llenarAlbum()
+        {
+            listaAlbum = al.ListaAlbum();
+            foreach (EAlbum al in listaAlbum)
+            {
+                cmbAlbumes.Items.Add(al);
+            }
+        }
+
+
+
+    }
 }

@@ -90,14 +90,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="frmPreview.exe" size="3204096">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="frmPreview.exe" size="3204608">
       <assemblyIdentity name="frmPreview" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Uq3aW6Ez2Y0+xxa6bAqYiOfEJzgmsdT7Rw9V8NtrXa4=</dsig:DigestValue>
+        <dsig:DigestValue>JgsnJiptkKN7rkOUh2DjBV8hxac5tXF18xpSHn7viAE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

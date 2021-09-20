@@ -53,11 +53,12 @@ namespace frmPreview
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lbCanciones = new System.Windows.Forms.ListBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.btnFinalizar = new System.Windows.Forms.Button();
+            this.lbCarrito = new System.Windows.Forms.ListBox();
             this.cmbAlbumes = new System.Windows.Forms.ComboBox();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.lbCarrito = new System.Windows.Forms.ListBox();
-            this.btnFinalizar = new System.Windows.Forms.Button();
-            this.lblTotal = new System.Windows.Forms.Label();
+            this.lbPrueba = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.wmPlayer)).BeginInit();
@@ -337,6 +338,7 @@ namespace frmPreview
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.lbPrueba);
             this.panel5.Controls.Add(this.lblTotal);
             this.panel5.Controls.Add(this.btnFinalizar);
             this.panel5.Controls.Add(this.lbCarrito);
@@ -348,6 +350,34 @@ namespace frmPreview
             this.panel5.Size = new System.Drawing.Size(257, 330);
             this.panel5.TabIndex = 3;
             // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.ForeColor = System.Drawing.Color.LightGray;
+            this.lblTotal.Location = new System.Drawing.Point(16, 172);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(47, 17);
+            this.lblTotal.TabIndex = 5;
+            this.lblTotal.Text = "label1";
+            // 
+            // btnFinalizar
+            // 
+            this.btnFinalizar.Location = new System.Drawing.Point(162, 286);
+            this.btnFinalizar.Name = "btnFinalizar";
+            this.btnFinalizar.Size = new System.Drawing.Size(75, 23);
+            this.btnFinalizar.TabIndex = 4;
+            this.btnFinalizar.Text = "Finalizar";
+            this.btnFinalizar.UseVisualStyleBackColor = true;
+            // 
+            // lbCarrito
+            // 
+            this.lbCarrito.FormattingEnabled = true;
+            this.lbCarrito.Location = new System.Drawing.Point(3, 35);
+            this.lbCarrito.Name = "lbCarrito";
+            this.lbCarrito.Size = new System.Drawing.Size(251, 95);
+            this.lbCarrito.TabIndex = 3;
+            // 
             // cmbAlbumes
             // 
             this.cmbAlbumes.FormattingEnabled = true;
@@ -355,6 +385,7 @@ namespace frmPreview
             this.cmbAlbumes.Name = "cmbAlbumes";
             this.cmbAlbumes.Size = new System.Drawing.Size(254, 21);
             this.cmbAlbumes.TabIndex = 2;
+            this.cmbAlbumes.SelectedIndexChanged += new System.EventHandler(this.cmbAlbumes_SelectedIndexChanged);
             // 
             // btnAgregar
             // 
@@ -366,33 +397,15 @@ namespace frmPreview
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // lbCarrito
+            // lbPrueba
             // 
-            this.lbCarrito.FormattingEnabled = true;
-            this.lbCarrito.Location = new System.Drawing.Point(3, 35);
-            this.lbCarrito.Name = "lbCarrito";
-            this.lbCarrito.Size = new System.Drawing.Size(251, 95);
-            this.lbCarrito.TabIndex = 3;
-            // 
-            // btnFinalizar
-            // 
-            this.btnFinalizar.Location = new System.Drawing.Point(162, 286);
-            this.btnFinalizar.Name = "btnFinalizar";
-            this.btnFinalizar.Size = new System.Drawing.Size(75, 23);
-            this.btnFinalizar.TabIndex = 4;
-            this.btnFinalizar.Text = "Finalizar";
-            this.btnFinalizar.UseVisualStyleBackColor = true;
-            // 
-            // lblTotal
-            // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.ForeColor = System.Drawing.Color.LightGray;
-            this.lblTotal.Location = new System.Drawing.Point(16, 172);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(47, 17);
-            this.lblTotal.TabIndex = 5;
-            this.lblTotal.Text = "label1";
+            this.lbPrueba.AutoSize = true;
+            this.lbPrueba.ForeColor = System.Drawing.Color.LightGray;
+            this.lbPrueba.Location = new System.Drawing.Point(16, 221);
+            this.lbPrueba.Name = "lbPrueba";
+            this.lbPrueba.Size = new System.Drawing.Size(35, 13);
+            this.lbPrueba.TabIndex = 6;
+            this.lbPrueba.Text = "label1";
             // 
             // Form1
             // 
@@ -451,6 +464,7 @@ namespace frmPreview
         private System.Windows.Forms.Button btnFinalizar;
         private System.Windows.Forms.ListBox lbCarrito;
         private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Label lbPrueba;
     }
 }
 
