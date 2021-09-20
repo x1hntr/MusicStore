@@ -8,9 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Negocio;
-using Entidades;
-
-
+using Enti;
 namespace frmPreview
 {
     public partial class Form1 : Form
@@ -19,7 +17,8 @@ namespace frmPreview
         string[] ArchivosMP3;
         string[] rutasArchivosMP3;
 
-
+        private List<EAlbum> listaAlbum = new List<EAlbum>();
+        private List<ECancion> listaCancion = new List<ECancion>();
 
         AlbumCPN al = new AlbumCPN();
         CancionCPN ca = new CancionCPN();

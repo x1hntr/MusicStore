@@ -1,0 +1,9 @@
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Enti\bin\Debug\Enti.dll
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Enti\bin\Debug\Enti.pdb
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Enti\bin\Debug\AccesoDatos.dll
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Enti\bin\Debug\AccesoDatos.pdb
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Enti\obj\Debug\Enti.csprojAssemblyReference.cache
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Enti\obj\Debug\Enti.csproj.CoreCompileInputs.cache
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Enti\obj\Debug\Enti.csproj.CopyComplete
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Enti\obj\Debug\Enti.dll
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Enti\obj\Debug\Enti.pdb

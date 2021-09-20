@@ -33,9 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Entidades, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="EntidadesM, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Entidades\bin\Debug\net5.0\Entidades.dll</HintPath>
+      <HintPath>..\EntidadesM\bin\Debug\net5.0\EntidadesM.dll</HintPath>
     </Reference>
     <Reference Include="MACTrackBarLib, Version=1.0.5896.38740, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MACTrackBarLib.dll.1.0.2\lib\net40\MACTrackBarLib.dll</HintPath>
@@ -131,6 +131,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pausa %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Enti\Enti.csproj">
+      <Project>{5c9e1634-f5e7-4d9d-8d57-ce2e6d07b7d5}</Project>
+      <Name>Enti</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

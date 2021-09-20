@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Reference Include="EntidadesM">
+      <HintPath>..\EntidadesM\bin\Debug\net5.0\EntidadesM.dll</HintPath>
+    </Reference>
     <Reference Include="frmDashboardAdmin">
       <HintPath>..\frmDashboardAdmin\bin\Debug\frmDashboardAdmin.exe</HintPath>
     </Reference>

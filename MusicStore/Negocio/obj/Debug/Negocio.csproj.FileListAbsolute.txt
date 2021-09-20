@@ -7,4 +7,5 @@ C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Negocio\obj\Debug\Ne
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Negocio\obj\Debug\Negocio.dll
 C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Negocio\obj\Debug\Negocio.pdb
-C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Negocio\bin\Debug\Entidades.pdb
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Negocio\bin\Debug\Enti.dll
+C:\Users\x1dxn\Documents\Repositories\MusicStore\MusicStore\Negocio\bin\Debug\Enti.pdb

@@ -34,10 +34,6 @@
     <Reference Include="AccesoDatos">
       <HintPath>..\AccesoDatos\bin\Debug\AccesoDatos.dll</HintPath>
     </Reference>
-    <Reference Include="Entidades, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\Entidades.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -55,6 +51,12 @@
     <Compile Include="ItemFacturaCPN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsuarioCPN.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Enti\Enti.csproj">
+      <Project>{5c9e1634-f5e7-4d9d-8d57-ce2e6d07b7d5}</Project>
+      <Name>Enti</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

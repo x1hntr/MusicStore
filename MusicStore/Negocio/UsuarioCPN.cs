@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AccesoDatos;
 using System.Data;
-using Entidades;
+using Enti;
 
 namespace Negocio
 {
