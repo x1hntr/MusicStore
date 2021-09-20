@@ -155,5 +155,23 @@ namespace frmDashboardAdmin
             else
                 MessageBox.Show("Llene todos los campos para continuar", "Alert");
         }
+
+        private void txtStock_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsDigit(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtPrecio_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsDigit(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                e.Handled = true;
+                return;
+            }
+        }
     }
 }

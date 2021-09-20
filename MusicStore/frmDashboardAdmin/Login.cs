@@ -37,7 +37,7 @@ namespace frmDashboardAdmin
                         if (txtUser.Text == us1.UserName && txtPass.Text == us1.Contrasenia)
                         {
                             loginI = true;
-                            MessageBox.Show("Inicio de sesion exitoso");
+                     
                             this.Hide();
                             dash.ShowDialog();
                             this.Close();

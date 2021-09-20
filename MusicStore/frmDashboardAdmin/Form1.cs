@@ -14,6 +14,8 @@ namespace frmDashboardAdmin
 {
     public partial class Form1 : Form
     {
+        frmDashboardAdmin.Login log = new frmDashboardAdmin.Login();
+
         public Form1()
         {
             InitializeComponent();
@@ -108,6 +110,13 @@ namespace frmDashboardAdmin
         {
             txtZona.Text = "Resumen";
             abrirFormularioHijo(new frmResumen());
+        }
+
+        private void btnSalir_MouseClick(object sender, MouseEventArgs e)
+        {
+            this.Hide();
+            log.ShowDialog();
+            this.Close();
         }
     }
 }

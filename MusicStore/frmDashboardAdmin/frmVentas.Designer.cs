@@ -35,12 +35,13 @@ namespace frmDashboardAdmin
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label1.Location = new System.Drawing.Point(334, 81);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.LightGray;
+            this.label1.Location = new System.Drawing.Point(39, 130);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(264, 31);
+            this.label1.Size = new System.Drawing.Size(673, 33);
             this.label1.TabIndex = 0;
-            this.label1.Text = "PANEL DE VENTAS";
+            this.label1.Text = "ESPERE MIENTRAS EL CLIENTE COMPLETA LA VENTA :)";
             // 
             // frmVentas
             // 
