@@ -381,6 +381,7 @@ namespace frmPreview
             this.Name = "Form1";
             this.Opacity = 0.98D;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

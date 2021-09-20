@@ -49,6 +49,7 @@ namespace AccesoDatos
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "editarCancion";
             comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@id", id);
             comando.Parameters.AddWithValue("@nombre", nombre);
             comando.Parameters.AddWithValue("@link", link);
             comando.Parameters.AddWithValue("@genero", genero);
@@ -60,10 +61,10 @@ namespace AccesoDatos
         }
         public void eliminarCancion(int id)
         {
-
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "eliminarCancion";
             comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@id", id);
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
             conexion.CerrarConexion();

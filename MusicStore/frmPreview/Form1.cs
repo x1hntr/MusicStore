@@ -19,8 +19,7 @@ namespace frmPreview
         string[] ArchivosMP3;
         string[] rutasArchivosMP3;
 
-        private List<EAlbum> listaAlbum = new List<EAlbum>();
-        private List<ECancion> listaCancion = new List<ECancion>();
+
 
         AlbumCPN al = new AlbumCPN();
         CancionCPN ca = new CancionCPN();
@@ -71,7 +70,7 @@ namespace frmPreview
             ActualizarDatosTrack();
             mtbDuracion.Value = (int)wmPlayer.Ctlcontrols.currentPosition;
             mtbVolumen.Value = wmPlayer.settings.volume;
-                }
+        }
         public void ActualizarDatosTrack() {
             if (wmPlayer.playState == WMPLib.WMPPlayState.wmppsPlaying) {
                 mtbDuracion.Maximum = (int)wmPlayer.Ctlcontrols.currentItem.duration;
@@ -89,7 +88,7 @@ namespace frmPreview
             ActualizarDatosTrack();
         }
 
-       
+
 
         private void mtbVolumen_ValueChanged(object sender, decimal value)
         {
@@ -116,5 +115,12 @@ namespace frmPreview
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+         
+
+
     }
+}
 }

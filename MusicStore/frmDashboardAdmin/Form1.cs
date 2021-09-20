@@ -98,5 +98,11 @@ namespace frmDashboardAdmin
             abrirFormularioHijo(new frmCanciones());
             
         }
+
+        private void btnFacturas_Click(object sender, EventArgs e)
+        {
+            txtZona.Text = "Facturas";
+            abrirFormularioHijo(new frmFactura());
+        }
     }
 }

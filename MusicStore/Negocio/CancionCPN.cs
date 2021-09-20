@@ -24,14 +24,14 @@ namespace Negocio
             can.insertarCancion(nombre, link, genero, idal);
 
         }
-        public void editarCancion(int id, string nombre, string link, string genero, int ida)
+        public void editarCancion(string id, string nombre, string link, string genero, string ida)
         {
-            can.editarCancion(id, nombre, link, genero, ida);
+            can.editarCancion(int.Parse(id), nombre, link, genero, int.Parse(ida));
 
         }
-        public void eliminarCancion(int id)
+        public void eliminarCancion(string id)
         {
-            can.eliminarCancion(id);
+            can.eliminarCancion(int.Parse(id));
         }
         public List<ECancion> ListaCancion()
         {

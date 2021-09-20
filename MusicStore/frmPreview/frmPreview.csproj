@@ -42,7 +42,7 @@
     </Reference>
     <Reference Include="Negocio, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Negocio\bin\Debug\Negocio.dll</HintPath>
+      <HintPath>..\Entidades\bin\Debug\net5.0\Negocio.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

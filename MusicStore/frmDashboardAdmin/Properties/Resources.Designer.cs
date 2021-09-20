@@ -123,6 +123,16 @@ namespace frmDashboardAdmin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap factura {
+            get {
+                object obj = ResourceManager.GetObject("factura", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Github {
             get {
                 object obj = ResourceManager.GetObject("Github", resourceCulture);
@@ -146,6 +156,16 @@ namespace frmDashboardAdmin.Properties {
         internal static System.Drawing.Bitmap informacion {
             get {
                 object obj = ResourceManager.GetObject("informacion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap letras_de_canciones {
+            get {
+                object obj = ResourceManager.GetObject("letras_de_canciones", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
