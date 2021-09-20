@@ -224,5 +224,22 @@ namespace frmPreview
                 return;
             }
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+
+            decimal total = 0;
+            EAlbum ca1 = lbCarrito.SelectedItem as EAlbum;
+            listaAlbumtotal.Remove(ca1);
+            lbCarrito.Items.Remove(ca1);
+            foreach (EAlbum al2 in listaAlbumtotal)
+            {
+                total = al2.Precio - total;
+
+
+            }
+            lblTotal.Text = total.ToString();
+        }
     }
 }

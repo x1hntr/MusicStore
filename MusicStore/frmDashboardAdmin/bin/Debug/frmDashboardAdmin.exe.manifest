@@ -78,26 +78,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="frmDashboardAdmin.exe" size="196576">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="frmDashboardAdmin.exe" size="202720">
       <assemblyIdentity name="frmDashboardAdmin" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>MJDeRxbW/dTnCsiLVePGYQXJlM/iXUaZnVcT5bC7A9E=</dsig:DigestValue>
+        <dsig:DigestValue>6Qo4+s/52r1Y2jF+KOIC1VnMPqy7IXPZ3hJPbMTpdr4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="frmPreview.exe" size="3209216">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="frmPreview.exe" size="3211776">
       <assemblyIdentity name="frmPreview" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>aOCS+38rJda+Ikw3TxpgZ7EH1dUCnhhXhezDeyIvINI=</dsig:DigestValue>
+        <dsig:DigestValue>RSR2oKOFExzrIbp1jeTH8tpYzzr+6ow/eJdfBzzfsMI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
